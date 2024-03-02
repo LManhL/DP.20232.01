@@ -44,6 +44,7 @@ public class PaymentScreenHandler extends BaseScreenHandler {
 	@FXML
 	private TextField securityCode;
 
+	// data coupling
 	public PaymentScreenHandler(Stage stage, String screenPath, Invoice invoice) throws IOException {
 		super(stage, screenPath);
 		try {
@@ -73,10 +74,11 @@ public class PaymentScreenHandler extends BaseScreenHandler {
 		});
 	}
 
-	void confirmToPayOrder() throws IOException{
+	void confirmToPayOrder() throws IOException {
 		String contents = "pay order";
 		PaymentController ctrl = (PaymentController) getBController();
-		Map<String, String> response = ctrl.payOrder(invoice.getAmount(), contents, cardNumber.getText(), holderName.getText(),
+		Map<String, String> response = ctrl.payOrder(invoice.getAmount(), contents, cardNumber.getText(),
+				holderName.getText(),
 				expirationDate.getText(), securityCode.getText());
 
 		BaseScreenHandler resultScreen = new ResultScreenHandler(this.stage, ViewsConfig.RESULT_SCREEN_PATH, response);

@@ -49,7 +49,8 @@ public class MediaHandler extends FXMLScreenHandler implements Observable {
     private Media media;
     private List<Observer> observerList;
 
-    public MediaHandler(String screenPath, Media media) throws SQLException, IOException{
+    // data coupling
+    public MediaHandler(String screenPath, Media media) throws SQLException, IOException {
         super(screenPath);
         this.media = media;
         this.observerList = new ArrayList<>();
@@ -59,9 +60,10 @@ public class MediaHandler extends FXMLScreenHandler implements Observable {
         setMediaInfo();
     }
 
-    Media getMedia(){
+    Media getMedia() {
         return media;
     }
+
     int getRequestQuantity() {
         return spinnerChangeNumber.getValue();
     }
@@ -78,8 +80,7 @@ public class MediaHandler extends FXMLScreenHandler implements Observable {
         mediaPrice.setText(ViewsConfig.getCurrencyFormat(media.getPrice()));
         mediaAvail.setText(Integer.toString(media.getQuantity()));
         spinnerChangeNumber.setValueFactory(
-            new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100, 1)
-        );
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100, 1));
 
         setImage(mediaImage, media.getImageURL());
     }

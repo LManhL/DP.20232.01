@@ -8,24 +8,30 @@ import entity.media.Media;
 
 /**
  * This class is the base controller for our AIMS project
+ * 
  * @author nguyenlm
  */
 public class BaseController {
-    
+
     /**
-     * The method checks whether the Media in Cart, if it were in, we will return the CartMedia else return null
+     * The method checks whether the Media in Cart, if it were in, we will return
+     * the CartMedia else return null
+     * 
      * @param media
      * @return CartMedia or null
      */
-    public CartItem checkMediaInCart(Media media){
+    // common coupling -> dùng trực tiếp các trường của class SessionInformation
+    public CartItem checkMediaInCart(Media media) {
         return SessionInformation.cartInstance.checkMediaInCart(media);
     }
 
     /**
      * This method gets the list of items in cart
+     * 
      * @return List[CartMedia]
      */
-    public List getListCartMedia(){
+    // common coupling -> dùng trực tiếp các trường của class SessionInformation
+    public List getListCartMedia() {
         return SessionInformation.cartInstance.getListMedia();
     }
 }

@@ -19,6 +19,7 @@ import java.util.regex.Pattern;
 
 /**
  * This class controls the flow of place order usecase in our AIMS project
+ * 
  * @author nguyenlm
  */
 public class PlaceOrderController extends BaseController {
@@ -29,24 +30,30 @@ public class PlaceOrderController extends BaseController {
     private static Logger LOGGER = utils.Utils.getLogger(PlaceOrderController.class.getName());
 
     /**
-     * This method checks the availability of product when user click PlaceOrder button
+     * This method checks the availability of product when user click PlaceOrder
+     * button
+     * 
      * @throws SQLException
      */
+    // common coupling -> dùng trực tiếp các trường của class SessionInformation
     public void placeOrder() throws SQLException {
         SessionInformation.cartInstance.checkAvailabilityOfProduct();
     }
 
     /**
      * This method creates the new Order based on the Cart
+     * 
      * @return Order
      * @throws SQLException
      */
+    // common coupling -> dùng trực tiếp các trường của class SessionInformation
     public Order createOrder() throws SQLException {
         return new Order(SessionInformation.cartInstance);
     }
 
     /**
      * This method creates the new Invoice based on order
+     * 
      * @param order
      * @return Invoice
      */
@@ -56,11 +63,13 @@ public class PlaceOrderController extends BaseController {
 
     /**
      * This method takes responsibility for processing the shipping info from user
+     * 
      * @param info
      * @throws InterruptedException
      * @throws IOException
      */
-    public DeliveryInfo processDeliveryInfo(HashMap info) throws InterruptedException, IOException, InvalidDeliveryInfoException {
+    public DeliveryInfo processDeliveryInfo(HashMap info)
+            throws InterruptedException, IOException, InvalidDeliveryInfoException {
         LOGGER.info("Process Delivery Info");
         LOGGER.info(info.toString());
         validateDeliveryInfo(info);
@@ -74,23 +83,29 @@ public class PlaceOrderController extends BaseController {
         System.out.println(deliveryInfo.getProvince());
         return deliveryInfo;
     }
-    
+
     /**
-   * The method validates the info
-   * @param info
-   * @throws InterruptedException
-   * @throws IOException
-   */
-    public void validateDeliveryInfo(HashMap<String, String> info) throws InterruptedException, IOException, InvalidDeliveryInfoException {
+     * The method validates the info
+     * 
+     * @param info
+     * @throws InterruptedException
+     * @throws IOException
+     */
+    public void validateDeliveryInfo(HashMap<String, String> info)
+            throws InterruptedException, IOException, InvalidDeliveryInfoException {
         if (validatePhoneNumber(info.get("phone"))
-        || validateName(info.get("name"))
-        || validateAddress(info.get("address"))) return;
-        else throw new InvalidDeliveryInfoException();
+                || validateName(info.get("name"))
+                || validateAddress(info.get("address")))
+            return;
+        else
+            throw new InvalidDeliveryInfoException();
     }
-    
+
     public boolean validatePhoneNumber(String phoneNumber) {
-        if (phoneNumber.length() != 10) return false;
-        if (!phoneNumber.startsWith("0")) return false;
+        if (phoneNumber.length() != 10)
+            return false;
+        if (!phoneNumber.startsWith("0"))
+            return false;
         try {
             Integer.parseInt(phoneNumber);
         } catch (NumberFormatException e) {
@@ -98,17 +113,19 @@ public class PlaceOrderController extends BaseController {
         }
         return true;
     }
-    
+
     public boolean validateName(String name) {
-        if (Objects.isNull(name)) return false;
+        if (Objects.isNull(name))
+            return false;
         String patternString = "^[a-zA-Z\\s]*$";
         Pattern pattern = Pattern.compile(patternString);
         Matcher matcher = pattern.matcher(name);
         return matcher.matches();
     }
-    
+
     public boolean validateAddress(String address) {
-        if (Objects.isNull(address)) return false;
+        if (Objects.isNull(address))
+            return false;
         String patternString = "^[a-zA-Z\\s]*$";
         Pattern pattern = Pattern.compile(patternString);
         Matcher matcher = pattern.matcher(address);

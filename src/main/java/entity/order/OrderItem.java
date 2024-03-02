@@ -3,30 +3,32 @@ package entity.order;
 import entity.media.Media;
 
 public class OrderItem {
-    
+
     private Media media;
     private int price;
     private int quantity;
 
+    // data coupling
     public OrderItem(Media media, int quantity, int price) {
         this.media = media;
         this.quantity = quantity;
         this.price = price;
     }
-    
+
     @Override
     public String toString() {
         return "{" +
-            "  media='" + media + "'" +
-            ", quantity='" + quantity + "'" +
-            ", price='" + price + "'" +
-            "}";
+                "  media='" + media + "'" +
+                ", quantity='" + quantity + "'" +
+                ", price='" + price + "'" +
+                "}";
     }
-    
+
     public Media getMedia() {
         return this.media;
     }
 
+    // data coupling
     public void setMedia(Media media) {
         this.media = media;
     }

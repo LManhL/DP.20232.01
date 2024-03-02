@@ -24,6 +24,7 @@ public class Order {
         this.tax = 0;
     }
 
+    // data coupling
     public Order(Cart cart) {
         List<OrderItem> orderItems = new ArrayList<>();
         for (Object object : SessionInformation.cartInstance.getListMedia()) {
@@ -35,7 +36,7 @@ public class Order {
         }
         this.orderMediaList = Collections.unmodifiableList(orderItems);
         this.subtotal = cart.calSubtotal();
-        this.tax = (int) (ViewsConfig.PERCENT_VAT/100) * subtotal;
+        this.tax = (int) (ViewsConfig.PERCENT_VAT / 100) * subtotal;
     }
 
     public List getListOrderMedia() {
@@ -43,7 +44,8 @@ public class Order {
     }
 
     public int getShippingFees() {
-        if (deliveryInfo == null) return 0;
+        if (deliveryInfo == null)
+            return 0;
         return this.shippingFees;
     }
 
@@ -51,6 +53,7 @@ public class Order {
         return deliveryInfo;
     }
 
+    // data coupling
     public void setDeliveryInfo(DeliveryInfo deliveryInfo) {
         this.deliveryInfo = deliveryInfo;
         this.shippingFees = deliveryInfo.calculateShippingFee(this);
