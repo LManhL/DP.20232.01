@@ -82,9 +82,11 @@ public class MediaHandler extends FXMLScreenHandler {
 		image.setFitWidth(92);
 
 		// add delete button
+		// common coupling
 		btnDelete.setFont(ViewsConfig.REGULAR_FONT);
 		btnDelete.setOnMouseClicked(e -> {
 			try {
+				// common coupling: trưc tiếp thao tác với thuộc tính class SessionInformation
 				SessionInformation.cartInstance.removeCartMedia(cartItem); // update user cart
 				cartScreen.updateCart(); // re-display user cart
 				LOGGER.info("Deleted " + cartItem.getMedia().getTitle() + " from the cart");

@@ -10,6 +10,8 @@ import entity.media.Media;
  * This class is the base controller for our AIMS project
  * @author nguyenlm
  */
+
+// Common coupling: trực tiếp thao tác với các thuộc tính trong class SessionInformation để xử lý phần giỏ hàng
 public class BaseController {
     
     /**
@@ -18,6 +20,7 @@ public class BaseController {
      * @return CartMedia or null
      */
     public CartItem checkMediaInCart(Media media){
+        // common couling
         return SessionInformation.cartInstance.checkMediaInCart(media);
     }
 
@@ -26,6 +29,7 @@ public class BaseController {
      * @return List[CartMedia]
      */
     public List getListCartMedia(){
+        // common couling
         return SessionInformation.cartInstance.getListMedia();
     }
 }

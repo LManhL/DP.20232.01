@@ -143,7 +143,7 @@ public class HomeScreenHandler extends BaseScreenHandler implements Observer {
             btnLogin.setText("User");
             btnLogin.setOnMouseClicked(event -> {});
         }
-
+        // common coupling: trưc tiếp thao tác tới class SessionInformation
         numMediaInCart.setText(String.valueOf(SessionInformation.cartInstance.getListMedia().size()) + " media");
         super.show();
     }
@@ -219,6 +219,7 @@ public class HomeScreenHandler extends BaseScreenHandler implements Observer {
 
         try {
             if (requestQuantity > media.getQuantity()) throw new MediaNotAvailableException();
+            // common coupling: sử dụng trực tiếp thuộc tính của class SessionInformation
             Cart cart = SessionInformation.cartInstance;
             // if media already in cart then we will increase the quantity by 1 instead of create the new cartMedia
             CartItem mediaInCart = getBController().checkMediaInCart(media);

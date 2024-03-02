@@ -27,6 +27,7 @@ public class IntroScreenHandler extends BaseScreenHandler {
         super(stage, screenPath);
 
         try {
+            // hàm không có ý nghĩa
             setupData(null);
             setupFunctionality();
         } catch (IOException ex) {
@@ -37,7 +38,6 @@ public class IntroScreenHandler extends BaseScreenHandler {
             PopupScreen.error(ex.getMessage());
         }
     }
-
 
     protected void setupData(Object dto) throws Exception {
         return;

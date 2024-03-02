@@ -33,6 +33,7 @@ public class PlaceOrderController extends BaseController {
      * @throws SQLException
      */
     public void placeOrder() throws SQLException {
+        // common coupling: trực tiếp thao tác với thuộc tính trong class SessionInformation để xử lý phần kiểm tra sản phẩm
         SessionInformation.cartInstance.checkAvailabilityOfProduct();
     }
 
@@ -42,6 +43,7 @@ public class PlaceOrderController extends BaseController {
      * @throws SQLException
      */
     public Order createOrder() throws SQLException {
+        // common coupling
         return new Order(SessionInformation.cartInstance);
     }
 
@@ -60,6 +62,8 @@ public class PlaceOrderController extends BaseController {
      * @throws InterruptedException
      * @throws IOException
      */
+
+    // stamp coupling: info có thể chứa nhiều hơn các thông tin cần thiết
     public DeliveryInfo processDeliveryInfo(HashMap info) throws InterruptedException, IOException, InvalidDeliveryInfoException {
         LOGGER.info("Process Delivery Info");
         LOGGER.info(info.toString());
@@ -81,6 +85,7 @@ public class PlaceOrderController extends BaseController {
    * @throws InterruptedException
    * @throws IOException
    */
+    // stamp coupling: chỉ cần thao tác với các thộc tính phone, name, address nhưng truyền cả HashMap vào
     public void validateDeliveryInfo(HashMap<String, String> info) throws InterruptedException, IOException, InvalidDeliveryInfoException {
         if (validatePhoneNumber(info.get("phone"))
         || validateName(info.get("name"))
