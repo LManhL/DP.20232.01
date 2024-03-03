@@ -45,6 +45,10 @@ public class Media {
         this.imageURL = imageUrl;
     }
 
+    /**
+     * Content Coupling: truy cập trực tiếp vào thuộc tính quantity của media lấy từ phương thức
+     * getMediaById của class MediaDAO
+     */
     public int getQuantity() throws SQLException {
         int updated_quantity = new MediaDAO().getMediaById(id).quantity;
         this.quantity = updated_quantity;

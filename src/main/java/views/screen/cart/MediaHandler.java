@@ -71,6 +71,10 @@ public class MediaHandler extends FXMLScreenHandler {
 		setMediaInfo();
 	}
 
+	/**
+	 * Common Coupling: do SessionInformation là class chứa các biến toàn cục và class MediaHandler
+	 * trực tiếp truy cập biến cartInstance của nó để thực hiện phương thức removeCartMedia
+	 */
 	private void setMediaInfo() {
 		title.setText(cartItem.getMedia().getTitle());
 		price.setText(ViewsConfig.getCurrencyFormat(cartItem.getPrice()));
@@ -81,6 +85,9 @@ public class MediaHandler extends FXMLScreenHandler {
 		image.setFitHeight(110);
 		image.setFitWidth(92);
 
+		/**
+		 * Common Coupling
+		 */
 		// add delete button
 		btnDelete.setFont(ViewsConfig.REGULAR_FONT);
 		btnDelete.setOnMouseClicked(e -> {

@@ -8,6 +8,9 @@ public class InterbankSubsystemController {
 	private static InterbankPayloadConverter interbankPayloadConverter = new InterbankPayloadConverter();
 	private static InterbankBoundary interbankBoundary = new InterbankBoundary();
 
+	/**
+	 * Stamp Coupling: truyền đối tượng CreditCart làm tham số nhưng không dùng tới
+	 */
 	public PaymentTransaction refund(CreditCard card, int amount, String contents) {
 		return null;
 	}

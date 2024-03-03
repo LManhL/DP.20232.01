@@ -18,6 +18,12 @@ import java.util.Objects;
 /**
  * @author
  */
+
+/**
+ * Common Coupling: do SessionInformation là class chứa các biến toàn cục và class AuthenticationController
+ * trực tiếp đọc và thay đổi các biến mainUser, expriredTime của nó để xử lý logic
+ * về phiên đăng nhập, đăng xuất
+ */
 public class AuthenticationController extends BaseController {
 
     public boolean isAnonymousSession() {
