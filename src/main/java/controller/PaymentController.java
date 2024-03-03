@@ -23,6 +23,7 @@ import subsystem.InterbankSubsystem;
  */
 /*
 	Lang Thành Long 20194098
+	Phương thức payOrder truyền vào từng thông tin làm tham số -> Data Coupling
 
  */
 public class PaymentController extends BaseController {

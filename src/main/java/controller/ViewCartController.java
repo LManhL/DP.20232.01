@@ -8,6 +8,10 @@ import entity.cart.Cart;
  * This class controls the flow of events when users view the Cart
  * @author nguyenlm
  */
+/*
+    Lang Thành Long 20194098
+    Common Coupling và Content Coupling do thay đổi các thuộc tính static của lớp SessionInformation
+ */
 public class ViewCartController extends BaseController{
     
     /**
