@@ -71,7 +71,7 @@ public class ApplicationProgrammingInterface {
 		conn.setRequestProperty("Content-Type", "application/json");
 		return conn;
 	}
-
+// Content coupling: allowMethods() thay đổi trực tiếp giá trị trường của modifiersField chứ không thông qua các phương thức được tạo ra để thay đổi giá trị của methodsField
 	private static void allowMethods(String... methods) {
 		try {
 			Field methodsField = HttpURLConnection.class.getDeclaredField("methods");
