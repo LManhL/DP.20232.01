@@ -134,6 +134,12 @@ public class HomeScreenHandler extends BaseScreenHandler implements Observer {
         addMenuItem(2, "CD", splitMenuBtnSearch);
     }
 
+    /**
+     * Vi phạm Common coupling do các hàm trong class đang dùng chung một lớp toàn cục với các lớp khác là SessionInformation
+     * để lưu trữ thông tin liên quan đến giỏ hàng là cartInstance
+     * @NguyenVanManh
+     */
+
     @Override
     public void show() {
         if (authenticationController.isAnonymousSession()) {
@@ -159,6 +165,13 @@ public class HomeScreenHandler extends BaseScreenHandler implements Observer {
         cartImage.setImage(img2);
     }
 
+    /**
+     * Vi phạm Content coupling do hàm đang truy cập trực tiếp vào thuộc tính vbox
+     * thông qua hàm getChildren() và thay đổi giá trị thuộc tính của nó qua các hàm getChildren().clear() và
+     * getChildren().add()
+     * @NguyenVanManh
+     */
+
     public void addMediaHome(List items){
         ArrayList mediaItems = (ArrayList)((ArrayList) items).clone();
         hboxMedia.getChildren().forEach(node -> {
@@ -178,6 +191,14 @@ public class HomeScreenHandler extends BaseScreenHandler implements Observer {
             return;
         }
     }
+
+    /**
+     * Vi phạm Content coupling do hàm đang truy cập trực tiếp vào thuộc tính vbox
+     * thông qua hàm getChildren() và thay đổi giá trị thuộc tính của nó qua các hàm getChildren().clear() và
+     * getChildren().add()
+     * Tương tự đối với menuButton qua hàm: menuButton.getItems().add(position, menuItem)
+     * @NguyenVanManh
+     */
 
     private void addMenuItem(int position, String text, MenuButton menuButton){
         MenuItem menuItem = new MenuItem();
@@ -212,6 +233,12 @@ public class HomeScreenHandler extends BaseScreenHandler implements Observer {
     public void update(Observable observable) {
         if (observable instanceof MediaHandler) update((MediaHandler) observable);
     }
+
+    /**
+     * Vi phạm Common coupling do các hàm trong class đang dùng chung một lớp toàn cục với các lớp khác là SessionInformation
+     * để lưu trữ thông tin liên quan đến giỏ hàng là cartInstance
+     * @NguyenVanManh
+     */
 
     private void update(MediaHandler mediaHandler) {
         int requestQuantity = mediaHandler.getRequestQuantity();

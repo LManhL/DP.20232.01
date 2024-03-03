@@ -18,6 +18,13 @@ import java.util.Objects;
 /**
  * @author
  */
+
+/**
+ * Vi phạm Common coupling do các hàm trong class đang dùng chung một lớp toàn cục với các lớp khác là SessionInformation
+ * để lưu trữ các thông tin liên quan đến phiên đăng nhập như mainUser và expiredTime
+ * @NguyenVanManh
+ */
+
 public class AuthenticationController extends BaseController {
 
     public boolean isAnonymousSession() {

@@ -66,6 +66,12 @@ public class ShippingScreenHandler extends BaseScreenHandler {
 		}
 	}
 
+	/**
+	 * Vi phạm Content coupling do hàm đang truy cập trực tiếp vào thuộc tính province
+	 * và thay đổi giá trị thuộc tính của nó qua hàm this.province.getItems().addAll(ShippingConfigs.PROVINCES)
+	 * @NguyenVanManh
+	 */
+
 	protected void setupData(Object dto) throws Exception {
 		this.order = (Order) dto;
 		this.province.getItems().addAll(ShippingConfigs.PROVINCES);

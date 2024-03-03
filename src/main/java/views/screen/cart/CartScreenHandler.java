@@ -152,7 +152,14 @@ public class CartScreenHandler extends BaseScreenHandler {
 		labelVAT.setText(ViewsConfig.getCurrencyFormat(vat));
 		labelAmount.setText(ViewsConfig.getCurrencyFormat(amount));
 	}
-	
+
+	/**
+	 * Vi phạm Content coupling do hàm displayCartWithMediaAvailability() đang truy cập trực tiếp vào thuộc tính vbox
+	 * thông qua hàm getChildren() và thay đổi giá trị thuộc tính của nó qua các hàm getChildren().clear() và
+	 * getChildren().add()
+	 * @NguyenVanManh
+	 */
+
 	private void displayCartWithMediaAvailability(){
 		// clear all old cartMedia
 		vboxCart.getChildren().clear();
