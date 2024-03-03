@@ -13,6 +13,10 @@ import java.util.Map;
 /**
  * @author
  */
+/*
+    Lang Thành Long 20194098
+    Control Coupling ở phương thức extractPaymentTransaction
+ */
 public class InterbankPayloadConverter {
 
     /**

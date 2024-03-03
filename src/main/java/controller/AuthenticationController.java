@@ -18,6 +18,11 @@ import java.util.Objects;
 /**
  * @author
  */
+
+/*
+    Lang Thành Long 20194098
+    Vi phạm vào Common Coupling và Content Coupling do đã thay đổi các thuộc tính Static của lớp SessionInformaition.
+ */
 public class AuthenticationController extends BaseController {
 
     public boolean isAnonymousSession() {
