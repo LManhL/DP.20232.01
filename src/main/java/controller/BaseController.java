@@ -10,6 +10,12 @@ import entity.media.Media;
  * This class is the base controller for our AIMS project
  * @author nguyenlm
  */
+/*
+Control Coupling 
+Class này chứa các phương thức mà sử dụng trực tiếp đối tượng SessionInformation.cartInstance
+ để thực hiện các tác vụ liên quan đến giỏ hàng (cart). Điều này tạo ra sự phụ thuộc giữa BaseController 
+ và đối tượng SessionInformation.cartInstance, và BaseController đang điều khiển hoạt động của SessionInformation.cartInstance. 
+ */
 public class BaseController {
     
     /**

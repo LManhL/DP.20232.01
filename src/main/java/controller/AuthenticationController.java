@@ -18,6 +18,12 @@ import java.util.Objects;
 /**
  * @author
  */
+
+/*
+Control Coupling
+ Trong phương thức getMainUser(), nếu thời gian hết hạn (SessionInformation.expiredTime) đã qua thì nó sẽ gọi phương thức logout(). 
+ Đây là control coupling vì nó kiểm soát cả quyết định logout trong trường hợp thời gian hết hạn.
+ */
 public class AuthenticationController extends BaseController {
 
     public boolean isAnonymousSession() {

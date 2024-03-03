@@ -21,6 +21,11 @@ import java.util.regex.Pattern;
  * This class controls the flow of place order usecase in our AIMS project
  * @author nguyenlm
  */
+/*
+content coupling
+PlaceOrderController phụ thuộc vào các ngoại lệ như InvalidDeliveryInfoException, 
+cũng như các lớp khác như DistanceCalculator, SessionInformation, và DeliveryInfo để thực hiện các chức năng của nó. 
+ */
 public class PlaceOrderController extends BaseController {
 
     /**
