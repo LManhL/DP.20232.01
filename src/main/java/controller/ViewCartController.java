@@ -8,6 +8,11 @@ import entity.cart.Cart;
  * This class controls the flow of events when users view the Cart
  * @author nguyenlm
  */
+/*
+common coupling
+Class này phụ thuộc vào SessionInformation để truy cập vào giỏ hàng hiện tại (SessionInformation.cartInstance), 
+mà không có sự phụ thuộc vào các thành phần cụ thể khác ngoài SessionInformation.
+ */
 public class ViewCartController extends BaseController{
     
     /**

@@ -17,6 +17,14 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.logging.Logger;
 
+/*
+common coupling
+Class này đóng gói các phương thức để tương tác với các API thông qua HTTP.
+Các phương thức này không phụ thuộc vào bất kỳ lớp hoặc module cụ thể nào trong hệ thống, 
+mà chỉ tương tác với API bên ngoài thông qua các yêu cầu HTTP.
+nó không phụ thuộc vào các thành phần cụ thể trong hệ thống mà chỉ tương tác với các thành phần ngoại vi.
+ */
+
 public class ApplicationProgrammingInterface {
 
 	public static DateFormat DATE_FORMATTER = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");

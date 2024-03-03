@@ -21,6 +21,11 @@ import subsystem.InterbankSubsystem;
  * @author hieud
  *
  */
+/*
+Content Coupling
+PaymentController phụ thuộc vào cấu trúc nội dung của các exception trong package common.exception 
+để xử lý các trường hợp ngoại lệ trong quá trình thanh toán.
+ */
 public class PaymentController extends BaseController {
 
 	/**
