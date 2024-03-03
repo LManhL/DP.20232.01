@@ -70,7 +70,7 @@ public class MediaHandler extends FXMLScreenHandler {
 		this.cartItem = cartItem;
 		setMediaInfo();
 	}
-
+// Common coupling: cartInstance sử dụng global data SessionInformation là cartInstance, ViewsConfig là REGULAR_FONT
 	private void setMediaInfo() {
 		title.setText(cartItem.getMedia().getTitle());
 		price.setText(ViewsConfig.getCurrencyFormat(cartItem.getPrice()));
