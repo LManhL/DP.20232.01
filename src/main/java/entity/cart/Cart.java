@@ -60,6 +60,10 @@ public class Cart {
         if (!allAvailable) throw new MediaNotAvailableException("Some media not available");
     }
 
+    /**
+     * Stamp Coupling: phương thức có tham số truyền vào là đối tượng Media nhưng chỉ sử dụng
+     * trường id
+     */
     public CartItem checkMediaInCart(Media media){
         for (CartItem cartItem : lstCartItem) {
             if (cartItem.getMedia().getId() == media.getId()) return cartItem;

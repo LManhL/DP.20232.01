@@ -103,6 +103,10 @@ public class PaymentController extends BaseController {
 		return result;
 	}
 
+	/**
+	 * Common Coupling: do SessionInformation là class chứa các biến toàn cục và class PaymentController
+	 * trực tiếp truy cập biến cartInstance của nó để xử lý logic về làm trống giỏ hàng
+	 */
 	public void emptyCart(){
         SessionInformation.cartInstance.emptyCart();
     }

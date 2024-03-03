@@ -66,6 +66,9 @@ public class ShippingScreenHandler extends BaseScreenHandler {
 		}
 	}
 
+	/**
+	 * Common Coupling: ShippingConfigs là class chứa 2 thuộc tính global
+	 */
 	protected void setupData(Object dto) throws Exception {
 		this.order = (Order) dto;
 		this.province.getItems().addAll(ShippingConfigs.PROVINCES);

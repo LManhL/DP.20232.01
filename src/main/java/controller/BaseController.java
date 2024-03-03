@@ -10,6 +10,12 @@ import entity.media.Media;
  * This class is the base controller for our AIMS project
  * @author nguyenlm
  */
+
+/**
+ * Common Coupling: do SessionInformation là class chứa các biến toàn cục và class BaseController
+ * trực tiếp truy cập biến cartInstance của nó để xử lý logic về kiểm tra sản phẩm trong giỏ hàng và
+ * lấy danh sách sản phẩm trong giỏ hàng
+ */
 public class BaseController {
     
     /**

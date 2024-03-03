@@ -29,6 +29,11 @@ public class PlaceOrderController extends BaseController {
     private static Logger LOGGER = utils.Utils.getLogger(PlaceOrderController.class.getName());
 
     /**
+     * Common Coupling: do SessionInformation là class chứa các biến toàn cục và các phương thức placeOrder
+     * và createOrder của class PlaceOrderController trực tiếp truy cập sử dụng biến cartInstance của nó
+     */
+
+    /**
      * This method checks the availability of product when user click PlaceOrder button
      * @throws SQLException
      */
@@ -81,6 +86,11 @@ public class PlaceOrderController extends BaseController {
    * @throws InterruptedException
    * @throws IOException
    */
+
+    /**
+     * Stamp Coupling: do tham số truyền vào là 1 HashMap nhưng phương thức chỉ cần 3 giá trị về phone,
+     * name, address
+     */
     public void validateDeliveryInfo(HashMap<String, String> info) throws InterruptedException, IOException, InvalidDeliveryInfoException {
         if (validatePhoneNumber(info.get("phone"))
         || validateName(info.get("name"))

@@ -144,6 +144,10 @@ public class HomeScreenHandler extends BaseScreenHandler implements Observer {
             btnLogin.setOnMouseClicked(event -> {});
         }
 
+        /**
+         * Common Coupling: do SessionInformation là class chứa các biến toàn cục và class HomeScreenHandler
+         * trực tiếp truy cập biến cartInstance của nó để lấy thông tin về danh sách sản phẩm trong giỏ
+         */
         numMediaInCart.setText(String.valueOf(SessionInformation.cartInstance.getListMedia().size()) + " media");
         super.show();
     }
@@ -213,6 +217,10 @@ public class HomeScreenHandler extends BaseScreenHandler implements Observer {
         if (observable instanceof MediaHandler) update((MediaHandler) observable);
     }
 
+    /**
+     * Common Coupling: do SessionInformation là class chứa các biến toàn cục và class HomeScreenHandler
+     * trực tiếp truy cập biến cartInstance của nó để gán cho đối tượng của class Cart
+     */
     private void update(MediaHandler mediaHandler) {
         int requestQuantity = mediaHandler.getRequestQuantity();
         Media media = mediaHandler.getMedia();

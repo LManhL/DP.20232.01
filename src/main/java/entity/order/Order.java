@@ -24,6 +24,10 @@ public class Order {
         this.tax = 0;
     }
 
+    /**
+     * Common Coupling: do SessionInformation là class chứa các biến toàn cục và class Order
+     * trực tiếp truy cập biến cartInstance của nó để lấy ra danh sách các sản phẩm trong giỏ hàng
+     */
     public Order(Cart cart) {
         List<OrderItem> orderItems = new ArrayList<>();
         for (Object object : SessionInformation.cartInstance.getListMedia()) {
@@ -35,6 +39,9 @@ public class Order {
         }
         this.orderMediaList = Collections.unmodifiableList(orderItems);
         this.subtotal = cart.calSubtotal();
+        /**
+         * Common Coupling
+         */
         this.tax = (int) (ViewsConfig.PERCENT_VAT/100) * subtotal;
     }
 
