@@ -1,21 +1,19 @@
 package controller;
 
-import common.exception.InvalidDeliveryInfoException;
-import entity.cart.Cart;
-import entity.cart.CartItem;
-import entity.invoice.Invoice;
-import entity.order.Order;
-import entity.order.OrderItem;
-import entity.shipping.DeliveryInfo;
-import entity.shipping.ShippingConfigs;
-import org.example.DistanceCalculator;
-
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Objects;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.example.DistanceCalculator;
+
+import common.exception.InvalidDeliveryInfoException;
+import entity.invoice.Invoice;
+import entity.order.Order;
+import entity.shipping.DeliveryInfo;
 
 /**
  * This class controls the flow of place order usecase in our AIMS project
@@ -81,6 +79,10 @@ public class PlaceOrderController extends BaseController {
    * @throws InterruptedException
    * @throws IOException
    */
+
+    /*
+     * Stamp Coupling: phương thức có tham số có thể chứa một số thông tin không cần sử dụng
+     */
     public void validateDeliveryInfo(HashMap<String, String> info) throws InterruptedException, IOException, InvalidDeliveryInfoException {
         if (validatePhoneNumber(info.get("phone"))
         || validateName(info.get("name"))

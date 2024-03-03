@@ -2,29 +2,30 @@ package views.screen.home;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Random;
-import java.util.ResourceBundle;
 import java.util.logging.Logger;
+
+import javax.swing.text.html.ImageView;
+
+import org.w3c.dom.events.MouseEvent;
 
 import common.exception.MediaNotAvailableException;
 import common.exception.ViewCartException;
 import common.interfaces.Observable;
 import common.interfaces.Observer;
-import controller.*;
+import controller.AuthenticationController;
+import controller.HomeController;
+import controller.SessionInformation;
+import controller.ViewCartController;
 import entity.cart.Cart;
 import entity.cart.CartItem;
 import entity.media.Media;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.TextAlignment;
@@ -134,6 +135,10 @@ public class HomeScreenHandler extends BaseScreenHandler implements Observer {
         addMenuItem(2, "CD", splitMenuBtnSearch);
     }
 
+    /*
+     * Common Coupling: do SessionInformation là class chứa các biến static và phương thức này
+     * trực tiếp đọc cartInstance của nó.
+     */
     @Override
     public void show() {
         if (authenticationController.isAnonymousSession()) {
