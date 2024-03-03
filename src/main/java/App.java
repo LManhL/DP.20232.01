@@ -22,7 +22,7 @@ public class App extends Application {
 	ImageView logo;
 
 	@Override
-	public void start(Stage primaryStage) {
+	public void start(Stage primaryStage) { // Stamp Coupling
 		try {
 
 			// initialize the scene

@@ -21,6 +21,10 @@ import subsystem.InterbankSubsystem;
  * @author hieud
  *
  */
+/*
+	Lang Thành Long 20194098
+
+ */
 public class PaymentController extends BaseController {
 
 	/**
@@ -82,7 +86,7 @@ public class PaymentController extends BaseController {
 	 *         message.
 	 */
 	public Map<String, String> payOrder(int amount, String contents, String cardNumber, String cardHolderName,
-			String expirationDate, String securityCode) {
+			String expirationDate, String securityCode) { // Data Coupling
 		Map<String, String> result = new Hashtable<String, String>();
 		result.put("RESULT", "PAYMENT FAILED!");
 		try {
