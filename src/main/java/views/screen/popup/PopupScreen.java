@@ -25,6 +25,12 @@ public class PopupScreen extends BaseScreenHandler {
         super(stage, ViewsConfig.POPUP_PATH);
     }
 
+    /**
+     * Vi phạm Content coupling do hàm đang truy cập trực tiếp vào thuộc tính popup
+     * và thay đổi giá trị thuộc tính của nó qua hàm popup.stage.initStyle(StageStyle.UNDECORATED)
+     * @NguyenVanManh
+     */
+
     private static PopupScreen popup(String message, String imagePath, Boolean undecorated) throws IOException{
         PopupScreen popup = new PopupScreen(new Stage());
         if (undecorated) popup.stage.initStyle(StageStyle.UNDECORATED);

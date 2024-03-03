@@ -10,6 +10,13 @@ import entity.media.Media;
  * This class is the base controller for our AIMS project
  * @author nguyenlm
  */
+
+/**
+ * Vi phạm Common coupling do các hàm trong class đang dùng chung một lớp toàn cục với các lớp khác là SessionInformation
+ * để lưu trữ thông tin liên quan đến giỏ hàng là cartInstance
+ * @NguyenVanManh
+ */
+
 public class BaseController {
     
     /**

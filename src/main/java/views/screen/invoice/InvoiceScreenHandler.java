@@ -71,6 +71,12 @@ public class InvoiceScreenHandler extends BaseScreenHandler {
 		}
 	}
 
+	/**
+	 * Vi phạm Content coupling do hàm đang truy cập trực tiếp vào thuộc tính vboxItems
+	 * thông qua hàm getChildren() và thay đổi giá trị thuộc tính của nó qua các hàm getChildren().add()
+	 * @NguyenVanManh
+	 */
+
 	protected void setupData(Object dto) throws Exception {
 		this.invoice = (Invoice) dto;
 		Order order = invoice.getOrder();

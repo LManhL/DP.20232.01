@@ -71,6 +71,12 @@ public class MediaHandler extends FXMLScreenHandler {
 		setMediaInfo();
 	}
 
+	/**
+	 * Vi phạm Common coupling do các hàm trong class đang dùng chung một lớp toàn cục với các lớp khác là SessionInformation
+	 * để lưu trữ thông tin liên quan đến giỏ hàng là cartInstance
+	 * @NguyenVanManh
+	 */
+
 	private void setMediaInfo() {
 		title.setText(cartItem.getMedia().getTitle());
 		price.setText(ViewsConfig.getCurrencyFormat(cartItem.getPrice()));
@@ -95,6 +101,14 @@ public class MediaHandler extends FXMLScreenHandler {
 		});
 		initializeSpinner();
 	}
+
+	/**
+	 * Vi phạm Content coupling do hàm initializeSpinner() đang truy cập trực tiếp vào thuộc tính và thay đổi giá trị thuộc tính của nó
+	 * thông qua các câu lệnh sau:
+	 * 		+ spinner.getValueFactory().setValue(remainQuantity)
+	 * 		+ spinnerFX.getChildren().add(this.spinner)
+	 * @NguyenVanManh
+	 */
 
 	private void initializeSpinner(){
 		SpinnerValueFactory<Integer> valueFactory = //

@@ -24,6 +24,12 @@ public class Order {
         this.tax = 0;
     }
 
+    /**
+     * Vi phạm Common coupling do các hàm trong class đang dùng chung một lớp toàn cục với các lớp khác là SessionInformation
+     * để lưu trữ thông tin liên quan đến giỏ hàng là cartInstance
+     * @NguyenVanManh
+     */
+
     public Order(Cart cart) {
         List<OrderItem> orderItems = new ArrayList<>();
         for (Object object : SessionInformation.cartInstance.getListMedia()) {
@@ -50,6 +56,11 @@ public class Order {
     public DeliveryInfo getDeliveryInfo() {
         return deliveryInfo;
     }
+
+    /**
+     * Vi phạm Stamp coupling do truyền cả giá trị order nhưng bên hàm calculateShippingFee(order) không sử dụng hết
+     * @NguyenVanManh
+     */
 
     public void setDeliveryInfo(DeliveryInfo deliveryInfo) {
         this.deliveryInfo = deliveryInfo;
