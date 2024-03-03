@@ -60,6 +60,9 @@ public class Cart {
         if (!allAvailable) throw new MediaNotAvailableException("Some media not available");
     }
 
+    /*
+     * Stamp Coupling: phương thức có tham số là đối tượng lớp Media nhưng chỉ dùng 1 thuộc tính/phương thức để lấy id
+     */
     public CartItem checkMediaInCart(Media media){
         for (CartItem cartItem : lstCartItem) {
             if (cartItem.getMedia().getId() == media.getId()) return cartItem;

@@ -1,14 +1,14 @@
 package entity.order;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import controller.SessionInformation;
 import entity.cart.Cart;
 import entity.cart.CartItem;
 import entity.shipping.DeliveryInfo;
 import views.screen.ViewsConfig;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class Order {
 
@@ -24,6 +24,12 @@ public class Order {
         this.tax = 0;
     }
 
+    /*
+     * Common Coupling: do SessionInformation là class chứa các biến static và phương thức này
+     * trực tiếp đọc cartInstance của nó.
+     * 
+     * ViewsConfig chứa trường PERCENT_VAT không được khai báo final
+     */
     public Order(Cart cart) {
         List<OrderItem> orderItems = new ArrayList<>();
         for (Object object : SessionInformation.cartInstance.getListMedia()) {

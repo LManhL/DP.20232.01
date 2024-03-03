@@ -1,17 +1,17 @@
 package controller;
 
-import common.exception.ExpiredSessionException;
-import common.exception.FailLoginException;
-import dao.user.UserDAO;
-import entity.user.User;
-import utils.Utils;
-
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.Objects;
+
+import common.exception.ExpiredSessionException;
+import common.exception.FailLoginException;
+import dao.user.UserDAO;
+import entity.user.User;
+import utils.Utils;
 
 
 
@@ -28,7 +28,11 @@ public class AuthenticationController extends BaseController {
             return true;
         }
     }
-
+    /*
+     * Common Coupling: do SessionInformation là class chứa các biến static và class BaseController
+     * trực tiếp đọc và thay đổi mainUser, expiredTime của nó.
+     */
+    
     public User getMainUser() throws ExpiredSessionException {
         if (SessionInformation.mainUser == null || SessionInformation.expiredTime == null || SessionInformation.expiredTime.isBefore(LocalDateTime.now())) {
             logout();

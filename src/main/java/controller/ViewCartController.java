@@ -2,12 +2,15 @@ package controller;
 
 import java.sql.SQLException;
 
-import entity.cart.Cart;
-
 /**
  * This class controls the flow of events when users view the Cart
  * @author nguyenlm
  */
+
+/*
+ * Common Coupling: do SessionInformation là class chứa các biến static và class ViewCartController
+ * trực tiếp đọc và thay đổi cartInstance của nó.
+*/
 public class ViewCartController extends BaseController{
     
     /**
