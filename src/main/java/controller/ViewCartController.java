@@ -8,6 +8,7 @@ import entity.cart.Cart;
  * This class controls the flow of events when users view the Cart
  * @author nguyenlm
  */
+// common coupling: thao tác trực tiếp với class SessionInformation để xử lý phần xem giỏ hàng
 public class ViewCartController extends BaseController{
     
     /**
@@ -15,6 +16,7 @@ public class ViewCartController extends BaseController{
      * @throws SQLException
      */
     public void checkAvailabilityOfProduct() throws SQLException{
+        // common coupling
         SessionInformation.cartInstance.checkAvailabilityOfProduct();
     }
 
@@ -23,6 +25,7 @@ public class ViewCartController extends BaseController{
      * @return subtotal
      */
     public int getCartSubtotal(){
+        // common coupling
         int subtotal = SessionInformation.cartInstance.calSubtotal();
         return subtotal;
     }

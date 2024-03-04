@@ -4,7 +4,7 @@ import entity.order.Order;
 import org.example.DistanceCalculator;
 
 public class DeliveryInfo {
-
+    // nên để các biến có phạm vi truy cập là private, tránh content coupling
     protected String name;
     protected String phone;
     protected String province;
@@ -21,6 +21,7 @@ public class DeliveryInfo {
         this.distanceCalculator = distanceCalculator;
     }
 
+    // stamp coupling: khai báo tham số nhưng không dùng
     public int calculateShippingFee(Order order) {
         int distance = distanceCalculator.calculateDistance(address, province);
         return (int) (distance * 1.2);

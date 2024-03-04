@@ -27,6 +27,7 @@ public class ViewsConfig {
     public static final String HOME_MEDIA_PATH = "/views/fxml/media_home.fxml";
     public static final String POPUP_PATH = "/views/fxml/popup.fxml";
 
+    // common coupling: 2 biến PERCENT_VAT và REGULAR_FONT: được khai báo public static, có thể bị thay đổi bởi các module khác
     public static float PERCENT_VAT = 10;
 
     public static Font REGULAR_FONT = Font.font("Segoe UI", FontWeight.NORMAL, FontPosture.REGULAR, 24);

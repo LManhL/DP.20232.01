@@ -47,6 +47,7 @@ public class Media {
 
     public int getQuantity() throws SQLException {
         int updated_quantity = new MediaDAO().getMediaById(id).quantity;
+        // content coupling: truy cập trực tiếp vào lớp MediaDAO và phuơng thức getMediaById() của nó và thao tác với quantity.
         this.quantity = updated_quantity;
         return updated_quantity;
     }
