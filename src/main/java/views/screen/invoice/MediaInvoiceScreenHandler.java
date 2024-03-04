@@ -12,7 +12,7 @@ import javafx.scene.layout.VBox;
 import views.screen.FXMLScreenHandler;
 import views.screen.ViewsConfig;
 
-public class MediaInvoiceScreenHandler extends FXMLScreenHandler{
+public class MediaInvoiceScreenHandler extends FXMLScreenHandler {
 
     @FXML
     private HBox hboxMedia;
@@ -40,23 +40,24 @@ public class MediaInvoiceScreenHandler extends FXMLScreenHandler{
 
     private OrderItem orderItem;
 
-    public MediaInvoiceScreenHandler(String screenPath) throws IOException{
+    public MediaInvoiceScreenHandler(String screenPath) throws IOException {
         super(screenPath);
     }
 
-    public void setOrderItem(OrderItem orderItem) throws SQLException{
+    // data coupling
+    public void setOrderItem(OrderItem orderItem) throws SQLException {
         this.orderItem = orderItem;
         setMediaInfo();
     }
 
-    public void setMediaInfo() throws SQLException{
+    public void setMediaInfo() throws SQLException {
         title.setText(orderItem.getMedia().getTitle());
         price.setText(ViewsConfig.getCurrencyFormat(orderItem.getPrice()));
         numOfProd.setText(String.valueOf(orderItem.getQuantity()));
         setImage(image, orderItem.getMedia().getImageURL());
-		image.setPreserveRatio(false);
-		image.setFitHeight(90);
-		image.setFitWidth(83);
+        image.setPreserveRatio(false);
+        image.setFitHeight(90);
+        image.setFitWidth(83);
     }
 
 }

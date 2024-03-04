@@ -8,10 +8,12 @@ public class InterbankSubsystemController {
 	private static InterbankPayloadConverter interbankPayloadConverter = new InterbankPayloadConverter();
 	private static InterbankBoundary interbankBoundary = new InterbankBoundary();
 
+	// data coupling
 	public PaymentTransaction refund(CreditCard card, int amount, String contents) {
 		return null;
 	}
 
+	// data coupling
 	public PaymentTransaction payOrder(CreditCard card, int amount, String contents) {
 		String requestPayload = interbankPayloadConverter.convertToRequestPayload(card, amount, contents);
 		String responseText = interbankBoundary.query(InterbankConfigs.PROCESS_TRANSACTION_URL, requestPayload);

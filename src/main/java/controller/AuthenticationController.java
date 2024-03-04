@@ -13,8 +13,6 @@ import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-
-
 /**
  * @author
  */
@@ -29,17 +27,22 @@ public class AuthenticationController extends BaseController {
         }
     }
 
+    // common coupling -> dùng trực tiếp các trường của class SessionInformation
     public User getMainUser() throws ExpiredSessionException {
-        if (SessionInformation.mainUser == null || SessionInformation.expiredTime == null || SessionInformation.expiredTime.isBefore(LocalDateTime.now())) {
+        if (SessionInformation.mainUser == null || SessionInformation.expiredTime == null
+                || SessionInformation.expiredTime.isBefore(LocalDateTime.now())) {
             logout();
             throw new ExpiredSessionException();
-        } else return SessionInformation.mainUser.cloneInformation();
+        } else
+            return SessionInformation.mainUser.cloneInformation();
     }
 
+    // common coupling -> dùng trực tiếp các trường của class SessionInformation
     public void login(String email, String password) throws Exception {
         try {
             User user = new UserDAO().authenticate(email, md5(password));
-            if (Objects.isNull(user)) throw new FailLoginException();
+            if (Objects.isNull(user))
+                throw new FailLoginException();
             SessionInformation.mainUser = user;
             SessionInformation.expiredTime = LocalDateTime.now().plusHours(24);
         } catch (SQLException ex) {
@@ -47,6 +50,7 @@ public class AuthenticationController extends BaseController {
         }
     }
 
+    // common coupling -> dùng trực tiếp các trường của class SessionInformation
     public void logout() {
         SessionInformation.mainUser = null;
         SessionInformation.expiredTime = null;

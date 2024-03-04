@@ -3,25 +3,27 @@ package entity.cart;
 import entity.media.Media;
 
 public class CartItem {
-    
+
     private Media media;
     private int quantity;
     private int price;
 
-    public CartItem(){
+    public CartItem() {
 
     }
 
+    // data coupling
     public CartItem(Media media, Cart cart, int quantity, int price) {
         this.media = media;
         this.quantity = quantity;
         this.price = price;
     }
-    
+
     public Media getMedia() {
         return this.media;
     }
 
+    // data coupling
     public void setMedia(Media media) {
         this.media = media;
     }
@@ -44,12 +46,10 @@ public class CartItem {
 
     @Override
     public String toString() {
-        return "{" 
-            + " media='" + media + "'" 
-            + ", quantity='" + quantity + "'" 
-            + "}";
+        return "{"
+                + " media='" + media + "'"
+                + ", quantity='" + quantity + "'"
+                + "}";
     }
 
 }
-
-    

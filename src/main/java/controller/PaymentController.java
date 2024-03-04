@@ -13,7 +13,6 @@ import entity.payment.PaymentTransaction;
 import subsystem.InterbankInterface;
 import subsystem.InterbankSubsystem;
 
-
 /**
  * This {@code PaymentController} class control the flow of the payment process
  * in our AIMS Software.
@@ -103,7 +102,8 @@ public class PaymentController extends BaseController {
 		return result;
 	}
 
-	public void emptyCart(){
-        SessionInformation.cartInstance.emptyCart();
-    }
+	// common coupling -> dùng trực tiếp các trường của class SessionInformation
+	public void emptyCart() {
+		SessionInformation.cartInstance.emptyCart();
+	}
 }
