@@ -20,7 +20,7 @@ public class PopupScreen extends BaseScreenHandler {
 
     @FXML
     Label message;
-
+// Common coupling: PopupScreen() sử dụng global data ViewsConfig là POPUP_PATH
     public PopupScreen(Stage stage) throws IOException{
         super(stage, ViewsConfig.POPUP_PATH);
     }
@@ -32,17 +32,17 @@ public class PopupScreen extends BaseScreenHandler {
         popup.setImage(imagePath);
         return popup;
     }
-
+// Common coupling: PopupScreen() sử dụng global data ViewsConfig là IMAGE_PATH
     public static void success(String message) throws IOException{
         popup(message, ViewsConfig.IMAGE_PATH + "/" + "tickgreen.png", true)
                 .show(true);
     }
-
+// Common coupling: PopupScreen() sử dụng global data ViewsConfig là IMAGE_PATH
     public static void error(String message) throws IOException{
         popup(message, ViewsConfig.IMAGE_PATH + "/" + "tickerror.png", false)
                 .show(false);
     }
-
+// Common coupling: PopupScreen() sử dụng global data ViewsConfig là IMAGE_PATH
     public static PopupScreen loading(String message) throws IOException{
         return popup(message, ViewsConfig.IMAGE_PATH + "/" + "loading.gif", true);
     }
@@ -66,7 +66,7 @@ public class PopupScreen extends BaseScreenHandler {
         delay.setOnFinished( event -> stage.close() );
         delay.play();
     }
-
+// Stamp coupling: setupData() truyền vào dto nhưng không sử dụng đến
     protected void setupData(Object dto) throws Exception {
     }
 

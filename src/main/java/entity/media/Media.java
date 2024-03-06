@@ -44,7 +44,7 @@ public class Media {
         this(id, title, category, price, quantity, type);
         this.imageURL = imageUrl;
     }
-
+// Content coupling: checkAvailabilityOfProduct() truy cập trực tiếp đến database 
     public int getQuantity() throws SQLException {
         int updated_quantity = new MediaDAO().getMediaById(id).quantity;
         this.quantity = updated_quantity;

@@ -10,6 +10,7 @@ import java.util.Locale;
 /**
  * @author
  */
+//  Common coupling: ViewsConfig() cung cấp global data nhưng không quản lý dữ liệu
 public class ViewsConfig {
 
     // static resource

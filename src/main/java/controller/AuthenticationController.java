@@ -28,7 +28,7 @@ public class AuthenticationController extends BaseController {
             return true;
         }
     }
-
+// Common coupling: getMainUser() sử dụng global data SessionInformation là mainUser và expiredTime
     public User getMainUser() throws ExpiredSessionException {
         if (SessionInformation.mainUser == null || SessionInformation.expiredTime == null || SessionInformation.expiredTime.isBefore(LocalDateTime.now())) {
             logout();
@@ -46,7 +46,7 @@ public class AuthenticationController extends BaseController {
             throw new FailLoginException();
         }
     }
-
+// Common coupling: getMainUser() sử dụng global data SessionInformation là mainUser và expiredTime
     public void logout() {
         SessionInformation.mainUser = null;
         SessionInformation.expiredTime = null;

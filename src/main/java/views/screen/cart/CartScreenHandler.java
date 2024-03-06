@@ -65,7 +65,7 @@ public class CartScreenHandler extends BaseScreenHandler {
 			PopupScreen.error(ex.getMessage());
 		}
 	}
-
+// Common coupling: setFunctionality() sử dụng global data ViewsConfig là IMAGE_PATH
 	protected void setupFunctionality() throws Exception {
 		// fix relative image path caused by fxml
 		File file = new File(ViewsConfig.IMAGE_PATH + "/Logo.png");
@@ -102,7 +102,7 @@ public class CartScreenHandler extends BaseScreenHandler {
 		displayCartWithMediaAvailability();
 		show();
 	}
-
+// Common coupling: requestToPlaceOrder() sử dụng global data ViewsConfig là SHIPPING_SCREEN_PATH
 	public void requestToPlaceOrder() throws SQLException, IOException {
 		try {
 			// create placeOrderController and process the order
@@ -152,7 +152,7 @@ public class CartScreenHandler extends BaseScreenHandler {
 		labelVAT.setText(ViewsConfig.getCurrencyFormat(vat));
 		labelAmount.setText(ViewsConfig.getCurrencyFormat(amount));
 	}
-	
+	// Common coupling: displayCartWithMediaAvailability() sử dụng global data ViewsConfig là CART_MEDIA_PATH
 	private void displayCartWithMediaAvailability(){
 		// clear all old cartMedia
 		vboxCart.getChildren().clear();

@@ -70,7 +70,7 @@ public class InvoiceScreenHandler extends BaseScreenHandler {
 			PopupScreen.error(ex.getMessage());
 		}
 	}
-
+// Common Coupling: setupData() sử dụng global data ViewsConfig là INVOICE_MEDIA_SCREEN_PATH
 	protected void setupData(Object dto) throws Exception {
 		this.invoice = (Invoice) dto;
 		Order order = invoice.getOrder();
@@ -101,7 +101,7 @@ public class InvoiceScreenHandler extends BaseScreenHandler {
 	protected void setupFunctionality() throws Exception {
 		return;
 	}
-
+// Common Coupling: confirmInvoice() sử dụng global data ViewsConfig là PAYMENT_SCREEN_PATH
 	@FXML
 	void confirmInvoice(MouseEvent event) throws IOException {
 		BaseScreenHandler paymentScreen = new PaymentScreenHandler(this.stage, ViewsConfig.PAYMENT_SCREEN_PATH, invoice);
