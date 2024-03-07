@@ -32,17 +32,17 @@ public class PopupScreen extends BaseScreenHandler {
         popup.setImage(imagePath);
         return popup;
     }
-// Common coupling: PopupScreen() sử dụng global data ViewsConfig là IMAGE_PATH
+// Common coupling: success() sử dụng global data ViewsConfig là IMAGE_PATH
     public static void success(String message) throws IOException{
         popup(message, ViewsConfig.IMAGE_PATH + "/" + "tickgreen.png", true)
                 .show(true);
     }
-// Common coupling: PopupScreen() sử dụng global data ViewsConfig là IMAGE_PATH
+// Common coupling: error() sử dụng global data ViewsConfig là IMAGE_PATH
     public static void error(String message) throws IOException{
         popup(message, ViewsConfig.IMAGE_PATH + "/" + "tickerror.png", false)
                 .show(false);
     }
-// Common coupling: PopupScreen() sử dụng global data ViewsConfig là IMAGE_PATH
+// Common coupling: loading() sử dụng global data ViewsConfig là IMAGE_PATH
     public static PopupScreen loading(String message) throws IOException{
         return popup(message, ViewsConfig.IMAGE_PATH + "/" + "loading.gif", true);
     }
