@@ -46,7 +46,7 @@ public class AuthenticationController extends BaseController {
             throw new FailLoginException();
         }
     }
-// Common coupling: getMainUser() sử dụng global data SessionInformation là mainUser và expiredTime
+// Common coupling: logout() sử dụng global data SessionInformation là mainUser và expiredTime
     public void logout() {
         SessionInformation.mainUser = null;
         SessionInformation.expiredTime = null;
