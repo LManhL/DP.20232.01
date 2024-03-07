@@ -42,7 +42,7 @@ public class PlaceOrderController extends BaseController {
      * @return Order
      * @throws SQLException
      */
-    // Common coupling: placeOrder() sử dụng global data SessionInformation là cartInstance
+    // Common coupling: createOrder() sử dụng global data SessionInformation là cartInstance
     public Order createOrder() throws SQLException {
         return new Order(SessionInformation.cartInstance);
     }
