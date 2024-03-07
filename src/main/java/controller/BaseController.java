@@ -26,7 +26,7 @@ public class BaseController {
      * This method gets the list of items in cart
      * @return List[CartMedia]
      */
-    // Common coupling: checkMediaInCart() sử dụng global data SessionInformation là cartInstance
+    // Common coupling: getListCartMedia() sử dụng global data SessionInformation là cartInstance
     public List getListCartMedia(){
         return SessionInformation.cartInstance.getListMedia();
     }
