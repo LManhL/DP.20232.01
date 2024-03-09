@@ -1,7 +1,9 @@
 package entity.cart;
 
 import entity.media.Media;
-
+/**
+ * Functional Cohesion: các chức năng liên quan tới CartItem
+ */
 public class CartItem {
     
     private Media media;

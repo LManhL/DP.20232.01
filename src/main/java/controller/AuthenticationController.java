@@ -18,6 +18,12 @@ import java.util.Objects;
 /**
  * @author
  */
+
+/**
+ * Functional Cohesion: do các phương thức đều tập trung vào một chức duy nhất: quản lý xác thực người dùng
+ * (authentication). Mỗi phương thức thực hiện một nhiệm vụ cụ thể liên quan đến xác thực, chẳng hạn
+ * như kiểm tra phiên ẩn danh, lấy thông tin người dùng chính, đăng nhập, đăng xuất và mã hóa mật khẩu.
+ */
 public class AuthenticationController extends BaseController {
 
     public boolean isAnonymousSession() {

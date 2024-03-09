@@ -17,6 +17,9 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.logging.Logger;
 
+/**
+ * Procedural Cohesion: các phương thức được nhóm lại dựa trên thứ tự thực thi
+ */
 public class ApplicationProgrammingInterface {
 
 	public static DateFormat DATE_FORMATTER = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");

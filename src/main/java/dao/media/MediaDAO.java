@@ -12,6 +12,11 @@ import java.util.List;
 /**
  * @author
  */
+
+/**
+ * Functional Cohesion: các phương thức tập trung vào thác tác dữ liệu về Media như lấy tất cả sản phẩm,
+ * lấy thông tin 1 sp theo id, cập nhật trường thông tin của sản phẩm
+ */
 public class MediaDAO {
 
     public List getAllMedia() throws SQLException {

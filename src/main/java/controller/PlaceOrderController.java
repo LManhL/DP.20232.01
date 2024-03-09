@@ -21,6 +21,13 @@ import java.util.regex.Pattern;
  * This class controls the flow of place order usecase in our AIMS project
  * @author nguyenlm
  */
+
+/**
+ * Procedural Cohesion: Các phương thức trong lớp này tập trung vào một quy trình chung,
+ * đó là xử lý việc đặt hàng của người dùng. Tuy nhiên, các phương thức này thực hiện các
+ * bước khác nhau trong quy trình chứ chưa tập trung rõ vào chức năng chính là đặt hàng,
+ * ví dụ như có cả xác thực dữ liệu thông tin giao hàng.
+ */
 public class PlaceOrderController extends BaseController {
 
     /**

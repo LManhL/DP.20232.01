@@ -4,7 +4,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
-
+/**
+ * Functional Cohesion: các chức năng liên quan tới Media CD
+ */
 public class CD extends Media {
 
     String artist;

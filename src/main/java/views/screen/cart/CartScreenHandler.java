@@ -26,6 +26,10 @@ import views.screen.ViewsConfig;
 import views.screen.popup.PopupScreen;
 import views.screen.shipping.ShippingScreenHandler;
 
+/**
+ * Functional Cohesion: Các chức năng có liên quan chặt chẽ với nhau,
+ * cùng chung mục đích để xử lí trên giao diện màn hình Cart
+ */
 public class CartScreenHandler extends BaseScreenHandler {
 	private static Logger LOGGER = Utils.getLogger(CartScreenHandler.class.getName());
 

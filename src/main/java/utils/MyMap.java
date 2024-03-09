@@ -12,6 +12,10 @@ import java.util.*;
  * @author hieud
  *
  */
+
+/**
+ * Functional Cohesion: các phương thức về thao tác cấu trúc dữ liệu MyMap
+ */
 public class MyMap extends LinkedHashMap<String, Object> {
 	private static final long serialVersionUID = 1L;
 

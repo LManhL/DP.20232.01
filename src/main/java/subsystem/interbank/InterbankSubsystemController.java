@@ -3,6 +3,10 @@ package subsystem.interbank;
 import entity.payment.CreditCard;
 import entity.payment.PaymentTransaction;
 
+/**
+ * Functional Cohesion: các chức năng liên quan tới giao dịch liên ngân hàng về đơn hàng, gồm thanh toán
+ * đơn hàng và hoàn tiền
+ */
 public class InterbankSubsystemController {
 
 	private static InterbankPayloadConverter interbankPayloadConverter = new InterbankPayloadConverter();
