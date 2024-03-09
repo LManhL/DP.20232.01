@@ -7,6 +7,8 @@ import java.util.List;
 import common.exception.MediaNotAvailableException;
 import entity.media.Media;
 
+// functional cohesion: các method liên quan đến thao tác với giỏ hàng
+
 public class Cart {
     
     private List<CartItem> lstCartItem;
@@ -40,6 +42,7 @@ public class Cart {
         return total;
     }
 
+    // communicational cohesion: phương thức tính tống tiền các mặt hàng trong giỏ hàng là không cần thiết
     public int calSubtotal(){
         int total = 0;
         for (Object obj : lstCartItem) {

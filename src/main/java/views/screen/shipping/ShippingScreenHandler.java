@@ -28,6 +28,8 @@ import java.util.HashMap;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
+// functional cohesion: xử lý giao diện shipping (tình trạng vận chuyển)
+
 public class ShippingScreenHandler extends BaseScreenHandler {
 
 	private static final Logger LOGGER = Utils.getLogger(ShippingScreenHandler.class.getName());

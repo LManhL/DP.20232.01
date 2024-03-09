@@ -2,6 +2,8 @@ package entity.order;
 
 import entity.media.Media;
 
+// functional cohesion
+
 public class OrderItem {
     
     private Media media;

@@ -4,6 +4,8 @@ import entity.payment.CreditCard;
 import entity.payment.PaymentTransaction;
 import subsystem.interbank.InterbankSubsystemController;
 
+// functional cohesion: các chức năng liên quan đến giao dịch (thanh toán, hoàn tiền)
+
 /***
  * The {@code InterbankSubsystem} class is used to communicate with the
  * Interbank to make transaction.

@@ -62,6 +62,7 @@ public class PaymentScreenHandler extends BaseScreenHandler {
 		this.invoice = (Invoice) dto;
 	}
 
+	// procedural cohesion: sau khi thanh toán thì xóa giỏ hàng
 	protected void setupFunctionality() throws Exception {
 		btnConfirmPayment.setOnMouseClicked(e -> {
 			try {

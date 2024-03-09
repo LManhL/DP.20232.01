@@ -33,6 +33,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
 
+// functional cohesion: xử lý với giao diện login
 
 public class LoginScreenHandler extends BaseScreenHandler{
 

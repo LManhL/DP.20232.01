@@ -4,6 +4,8 @@ import java.sql.SQLException;
 
 import entity.cart.Cart;
 
+// functional cohesion: lấy các thông tin về giỏ hàng
+
 /**
  * This class controls the flow of events when users view the Cart
  * @author nguyenlm
