@@ -21,6 +21,7 @@ import subsystem.InterbankSubsystem;
  * @author hieud
  *
  */
+// Procedural cohesion : do getExpirationDate() và emptyCart() không liên quan đến class mà chỉ thực hiện theo thứ tự thời gian 
 public class PaymentController extends BaseController {
 
 	/**
