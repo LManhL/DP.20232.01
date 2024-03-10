@@ -21,7 +21,6 @@ import subsystem.InterbankSubsystem;
  * @author hieud
  *
  */
-// Procedural cohesion : do emptyCart() không liên quan đến class mà chỉ thực hiện theo thứ tự thời gian cụ thể là sau khi thanh toán thì xóa khỏi giỏ hàng  
 public class PaymentController extends BaseController {
 
 	/**
