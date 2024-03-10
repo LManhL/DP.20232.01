@@ -21,7 +21,7 @@ import subsystem.InterbankSubsystem;
  * @author hieud
  *
  */
-public class PaymentController extends BaseController {
+public class PaymentController extends BaseController { //coincidental cohesion
 
 	/**
 	 * Represent the card used for payment

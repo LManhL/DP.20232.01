@@ -28,6 +28,8 @@ import java.util.HashMap;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
+
+//functional cohesion
 public class ShippingScreenHandler extends BaseScreenHandler {
 
 	private static final Logger LOGGER = Utils.getLogger(ShippingScreenHandler.class.getName());

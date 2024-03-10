@@ -6,6 +6,7 @@ import entity.cart.Cart;
 import entity.cart.CartItem;
 import entity.media.Media;
 
+//communicational cohesion
 /**
  * This class is the base controller for our AIMS project
  * @author nguyenlm

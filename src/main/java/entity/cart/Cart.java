@@ -7,6 +7,8 @@ import java.util.List;
 import common.exception.MediaNotAvailableException;
 import entity.media.Media;
 
+
+//functional cohesion
 public class Cart {
     
     private List<CartItem> lstCartItem;

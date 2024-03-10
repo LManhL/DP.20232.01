@@ -2,6 +2,8 @@ package entity.cart;
 
 import entity.media.Media;
 
+
+//functional cohesion
 public class CartItem {
     
     private Media media;
