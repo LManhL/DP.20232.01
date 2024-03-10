@@ -13,7 +13,7 @@ import java.util.Map;
 /**
  * @author
  */
-// procedural Cohesion: phương thức getToday() chỉ liên quan đến thứ tự thực hiện trong phương thức convertToRequestPayload()
+
 public class InterbankPayloadConverter {
 
     /**
