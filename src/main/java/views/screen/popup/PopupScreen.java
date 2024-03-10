@@ -12,7 +12,7 @@ import views.screen.ViewsConfig;
 
 import java.io.IOException;
 
-
+// logical cohesion: phương thức success(), error(),loading() cùng liên quan đến hiển thị popup 
 public class PopupScreen extends BaseScreenHandler {
 
     @FXML
