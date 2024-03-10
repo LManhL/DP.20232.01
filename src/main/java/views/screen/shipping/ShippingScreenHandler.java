@@ -27,6 +27,7 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
+//functional cohesion
 
 public class ShippingScreenHandler extends BaseScreenHandler {
 
@@ -74,8 +75,8 @@ public class ShippingScreenHandler extends BaseScreenHandler {
 
 	protected void setupFunctionality() throws Exception {
 		final BooleanProperty firstTime = new SimpleBooleanProperty(true); // Variable to store the focus on stage load
-		name.focusedProperty().addListener((observable,  oldValue,  newValue) -> {
-			if(newValue && firstTime.get()){
+		name.focusedProperty().addListener((observable, oldValue, newValue) -> {
+			if (newValue && firstTime.get()) {
 				content.requestFocus(); // Delegate the focus to container
 				firstTime.setValue(false); // Variable value changed for future references
 			}
@@ -88,10 +89,11 @@ public class ShippingScreenHandler extends BaseScreenHandler {
 
 		// validate delivery info and prepare order info
 		preprocessDeliveryInfo();
-		
+
 		// create invoice screen
 		Invoice invoice = getBController().createInvoice(order);
-		BaseScreenHandler InvoiceScreenHandler = new InvoiceScreenHandler(this.stage, ViewsConfig.INVOICE_SCREEN_PATH, invoice);
+		BaseScreenHandler InvoiceScreenHandler = new InvoiceScreenHandler(this.stage, ViewsConfig.INVOICE_SCREEN_PATH,
+				invoice);
 		InvoiceScreenHandler.setPreviousScreen(this);
 		InvoiceScreenHandler.setHomeScreenHandler(homeScreenHandler);
 		InvoiceScreenHandler.setScreenTitle("Invoice Screen");
@@ -119,11 +121,11 @@ public class ShippingScreenHandler extends BaseScreenHandler {
 		order.setDeliveryInfo(deliveryInfo);
 	}
 
-	public PlaceOrderController getBController(){
+	public PlaceOrderController getBController() {
 		return (PlaceOrderController) super.getBController();
 	}
 
-	public void notifyError(){
+	public void notifyError() {
 		// TODO: implement later on if we need
 	}
 

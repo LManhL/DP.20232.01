@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
+//functional cohesion
 
 public class DVD extends Media {
 
@@ -15,12 +16,13 @@ public class DVD extends Media {
     Date releasedDate;
     String filmType;
 
-    public DVD() throws SQLException{
+    public DVD() throws SQLException {
 
     }
 
     public DVD(int id, String title, String category, int price, int quantity, String type, String discType,
-            String director, int runtime, String studio, String subtitles, Date releasedDate, String filmType) throws SQLException{
+            String director, int runtime, String studio, String subtitles, Date releasedDate, String filmType)
+            throws SQLException {
         super(id, title, category, price, quantity, type);
         this.discType = discType;
         this.director = director;

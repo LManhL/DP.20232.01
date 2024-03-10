@@ -9,9 +9,13 @@ import java.sql.Statement;
 import java.util.logging.Logger;
 
 /**
- * The general media class, for another media it can be done by inheriting this class
+ * The general media class, for another media it can be done by inheriting this
+ * class
+ * 
  * @author nguyenlm
  */
+// functional cohesion
+
 public class Media {
 
     private static Logger LOGGER = Utils.getLogger(Media.class.getName());
@@ -31,7 +35,7 @@ public class Media {
         stm = AIMSDB.getConnection().createStatement();
     }
 
-    public Media (int id, String title, String category, int price, int quantity, String type) throws SQLException{
+    public Media(int id, String title, String category, int price, int quantity, String type) throws SQLException {
         this.id = id;
         this.title = title;
         this.category = category;
@@ -40,7 +44,8 @@ public class Media {
         this.type = type;
     }
 
-    public Media(int id, String title, int quantity, String category, String imageUrl, int price, String type) throws SQLException {
+    public Media(int id, String title, int quantity, String category, String imageUrl, int price, String type)
+            throws SQLException {
         this(id, title, category, price, quantity, type);
         this.imageURL = imageUrl;
     }
@@ -51,12 +56,12 @@ public class Media {
         return updated_quantity;
     }
 
-    // getter and setter 
+    // getter and setter
     public int getId() {
         return this.id;
     }
 
-    private Media setId(int id){
+    private Media setId(int id) {
         this.id = id;
         return this;
     }
@@ -88,11 +93,11 @@ public class Media {
         return this;
     }
 
-    public String getImageURL(){
+    public String getImageURL() {
         return this.imageURL;
     }
 
-    public Media setMediaURL(String url){
+    public Media setMediaURL(String url) {
         this.imageURL = url;
         return this;
     }

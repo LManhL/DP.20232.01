@@ -2,13 +2,14 @@ package entity.cart;
 
 import entity.media.Media;
 
+//functional cohesion
 public class CartItem {
-    
+
     private Media media;
     private int quantity;
     private int price;
 
-    public CartItem(){
+    public CartItem() {
 
     }
 
@@ -17,7 +18,7 @@ public class CartItem {
         this.quantity = quantity;
         this.price = price;
     }
-    
+
     public Media getMedia() {
         return this.media;
     }
@@ -44,12 +45,10 @@ public class CartItem {
 
     @Override
     public String toString() {
-        return "{" 
-            + " media='" + media + "'" 
-            + ", quantity='" + quantity + "'" 
-            + "}";
+        return "{"
+                + " media='" + media + "'"
+                + ", quantity='" + quantity + "'"
+                + "}";
     }
 
 }
-
-    

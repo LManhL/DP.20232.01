@@ -1,7 +1,8 @@
 package entity.user;
+//functional cohesion
 
 public class User {
-    
+
     private int id;
     private String name;
     private String email;
@@ -19,16 +20,16 @@ public class User {
     public User cloneInformation() {
         return new User(this.id, this.name, this.email, this.address, this.phone);
     }
-    
+
     // override toString method
     @Override
     public String toString() {
         return "{" +
-            "  username='" + name + "'" +
-            ", email='" + email + "'" +
-            ", address='" + address + "'" +
-            ", phone='" + phone + "'" +
-            "}";
+                "  username='" + name + "'" +
+                ", email='" + email + "'" +
+                ", address='" + address + "'" +
+                ", phone='" + phone + "'" +
+                "}";
     }
 
     // getter and setter
@@ -63,5 +64,5 @@ public class User {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-    
+
 }

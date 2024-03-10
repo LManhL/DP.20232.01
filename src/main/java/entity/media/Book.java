@@ -8,6 +8,7 @@ import java.util.List;
 
 import entity.db.AIMSDB;
 
+//functional cohesion
 public class Book extends Media {
 
     String author;
@@ -18,13 +19,13 @@ public class Book extends Media {
     String language;
     String bookCategory;
 
-    public Book() throws SQLException{
+    public Book() throws SQLException {
 
     }
 
     public Book(int id, String title, String category, int price, int quantity, String type, String author,
             String coverType, String publisher, Date publishDate, int numOfPages, String language,
-            String bookCategory) throws SQLException{
+            String bookCategory) throws SQLException {
         super(id, title, category, price, quantity, type);
         this.author = author;
         this.coverType = coverType;
@@ -115,14 +116,14 @@ public class Book extends Media {
                 ", imageURL='" + imageURL + "'" +
                 "}";
         return "{" +
-            basicInformation +
-            " author='" + author + "'" +
-            ", coverType='" + coverType + "'" +
-            ", publisher='" + publisher + "'" +
-            ", publishDate='" + publishDate + "'" +
-            ", numOfPages='" + numOfPages + "'" +
-            ", language='" + language + "'" +
-            ", bookCategory='" + bookCategory + "'" +
-            "}";
+                basicInformation +
+                " author='" + author + "'" +
+                ", coverType='" + coverType + "'" +
+                ", publisher='" + publisher + "'" +
+                ", publishDate='" + publishDate + "'" +
+                ", numOfPages='" + numOfPages + "'" +
+                ", language='" + language + "'" +
+                ", bookCategory='" + bookCategory + "'" +
+                "}";
     }
 }

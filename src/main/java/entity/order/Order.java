@@ -9,6 +9,7 @@ import views.screen.ViewsConfig;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+//functional cohesion
 
 public class Order {
 
@@ -35,7 +36,7 @@ public class Order {
         }
         this.orderMediaList = Collections.unmodifiableList(orderItems);
         this.subtotal = cart.calSubtotal();
-        this.tax = (int) (ViewsConfig.PERCENT_VAT/100) * subtotal;
+        this.tax = (int) (ViewsConfig.PERCENT_VAT / 100) * subtotal;
     }
 
     public List getListOrderMedia() {
@@ -43,7 +44,8 @@ public class Order {
     }
 
     public int getShippingFees() {
-        if (deliveryInfo == null) return 0;
+        if (deliveryInfo == null)
+            return 0;
         return this.shippingFees;
     }
 

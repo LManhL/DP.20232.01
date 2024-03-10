@@ -13,7 +13,6 @@ import entity.payment.PaymentTransaction;
 import subsystem.InterbankInterface;
 import subsystem.InterbankSubsystem;
 
-
 /**
  * This {@code PaymentController} class control the flow of the payment process
  * in our AIMS Software.
@@ -21,6 +20,7 @@ import subsystem.InterbankSubsystem;
  * @author hieud
  *
  */
+// procedural cohesion: sau khi thanh toán (payOrder) sẽ xóa giỏ hàng (emtyCart)
 public class PaymentController extends BaseController {
 
 	/**
@@ -103,7 +103,7 @@ public class PaymentController extends BaseController {
 		return result;
 	}
 
-	public void emptyCart(){
-        SessionInformation.cartInstance.emptyCart();
-    }
+	public void emptyCart() {
+		SessionInformation.cartInstance.emptyCart();
+	}
 }
