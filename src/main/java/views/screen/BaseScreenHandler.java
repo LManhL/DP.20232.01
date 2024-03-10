@@ -14,6 +14,13 @@ import utils.Utils;
 import views.screen.home.HomeScreenHandler;
 import views.screen.popup.PopupScreen;
 
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * giúp hỗ trợ hiển thị và tương tác cho những class kế thừa BaseScreenHandler
+ * @Nguyen Van Manh
+ */
+
 public abstract class BaseScreenHandler extends FXMLScreenHandler {
 
 	private static final Logger LOGGER = Utils.getLogger(BaseScreenHandler.class.getName());

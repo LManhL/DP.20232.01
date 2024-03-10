@@ -8,6 +8,13 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * giúp hỗ trợ hiển thị và tương tác cho những class kế thừa FXMLScreenHandler
+ * @Nguyen Van Manh
+ */
+
 public class FXMLScreenHandler {
 
 	protected FXMLLoader loader;

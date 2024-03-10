@@ -12,6 +12,14 @@ import java.util.Date;
 /**
  * @author
  */
+
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * thao tác với DB để quản lý dữ liệu về User
+ * @Nguyen Van Manh
+ */
+
 public class UserDAO {
 
     public User authenticate(String email, String encryptedPassword) throws SQLException {

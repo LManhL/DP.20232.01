@@ -5,6 +5,12 @@ import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Mức cohesion: Communication cohesion
+ * Do các phương thức trong class này dùng chung thuộc tính
+ * @Nguyen Van Manh
+ */
+
 public class DVD extends Media {
 
     String discType;

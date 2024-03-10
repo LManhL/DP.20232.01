@@ -3,6 +3,12 @@ package entity.shipping;
 import entity.order.Order;
 import org.example.DistanceCalculator;
 
+/**
+ * Mức cohesion: Communication cohesion
+ * Do các phương thức trong class này dùng chung thuộc tính
+ * @Nguyen Van Manh
+ */
+
 public class DeliveryInfo {
 
     protected String name;

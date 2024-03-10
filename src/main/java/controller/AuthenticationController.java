@@ -18,6 +18,13 @@ import java.util.Objects;
 /**
  * @author
  */
+
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính, đó là quản lý phiên đăng nhập và xác thực người dùng
+ * @Nguyen Van Manh
+ */
+
 public class AuthenticationController extends BaseController {
 
     public boolean isAnonymousSession() {

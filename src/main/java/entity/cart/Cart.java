@@ -7,6 +7,15 @@ import java.util.List;
 import common.exception.MediaNotAvailableException;
 import entity.media.Media;
 
+
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * hỗ trợ cho việc thao tác với Cart
+ * @Nguyen Van Manh
+ */
+
+
 public class Cart {
     
     private List<CartItem> lstCartItem;

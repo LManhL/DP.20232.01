@@ -3,6 +3,13 @@ package entity.payment;
 /**
  * @author
  */
+
+/**
+ * Mức cohesion: Communication cohesion
+ * Do các phương thức trong class này dùng chung thuộc tính
+ * @Nguyen Van Manh
+ */
+
 public class CreditCard {
 
     private String cardCode;

@@ -1,5 +1,12 @@
 package entity.payment;
 
+
+/**
+ * Mức cohesion: Communication cohesion
+ * Do các phương thức trong class này dùng chung thuộc tính
+ * @Nguyen Van Manh
+ */
+
 public class PaymentTransaction {
 	private String errorCode;
 	private CreditCard card;

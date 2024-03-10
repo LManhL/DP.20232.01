@@ -21,6 +21,14 @@ import java.util.regex.Pattern;
  * This class controls the flow of place order usecase in our AIMS project
  * @author nguyenlm
  */
+
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính đó là xử lý yêu cầu đặt hàng từ
+ * người dùng gửi đến thông qua CartScreenHandler và ShippingScreenHandler
+ * @Nguyen Van Manh
+ */
+
 public class PlaceOrderController extends BaseController {
 
     /**

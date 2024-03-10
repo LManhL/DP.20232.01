@@ -12,6 +12,14 @@ import java.util.*;
  * @author hieud
  *
  */
+
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * hỗ trợ cho việc chuyển đổi đối tượng class thành đối tượng JSON hoặc Map và ngược lại
+ * @Nguyen Van Manh
+ */
+
 public class MyMap extends LinkedHashMap<String, Object> {
 	private static final long serialVersionUID = 1L;
 

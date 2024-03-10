@@ -12,6 +12,13 @@ import java.util.logging.Logger;
  * The general media class, for another media it can be done by inheriting this class
  * @author nguyenlm
  */
+
+/**
+ * Mức cohesion: Communication cohesion
+ * Do các phương thức trong class này dùng chung thuộc tính
+ * @Nguyen Van Manh
+ */
+
 public class Media {
 
     private static Logger LOGGER = Utils.getLogger(Media.class.getName());

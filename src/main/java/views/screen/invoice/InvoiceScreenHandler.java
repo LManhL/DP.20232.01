@@ -21,6 +21,13 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * giúp hiển thị và tương tác với giao diện InvoiceScreenHandler
+ * @Nguyen Van Manh
+ */
+
 public class InvoiceScreenHandler extends BaseScreenHandler {
 
 	private static Logger LOGGER = Utils.getLogger(InvoiceScreenHandler.class.getName());

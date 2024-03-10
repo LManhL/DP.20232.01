@@ -8,6 +8,12 @@ import java.util.List;
 
 import entity.db.AIMSDB;
 
+/**
+ * Mức cohesion: Communication cohesion
+ * Do các phương thức trong class này dùng chung thuộc tính
+ * @Nguyen Van Manh
+ */
+
 public class Book extends Media {
 
     String author;
