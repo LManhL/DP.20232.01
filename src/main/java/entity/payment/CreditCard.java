@@ -3,6 +3,8 @@ package entity.payment;
 /**
  * @author
  */
+// functional cohesion
+
 public class CreditCard {
 
     private String cardCode;

@@ -16,6 +16,7 @@ import views.screen.popup.PopupScreen;
 import java.io.IOException;
 import java.util.Map;
 import java.util.logging.Logger;
+//functional cohesion
 
 public class PaymentScreenHandler extends BaseScreenHandler {
 
@@ -73,10 +74,11 @@ public class PaymentScreenHandler extends BaseScreenHandler {
 		});
 	}
 
-	void confirmToPayOrder() throws IOException{
+	void confirmToPayOrder() throws IOException {
 		String contents = "pay order";
 		PaymentController ctrl = (PaymentController) getBController();
-		Map<String, String> response = ctrl.payOrder(invoice.getAmount(), contents, cardNumber.getText(), holderName.getText(),
+		Map<String, String> response = ctrl.payOrder(invoice.getAmount(), contents, cardNumber.getText(),
+				holderName.getText(),
 				expirationDate.getText(), securityCode.getText());
 
 		BaseScreenHandler resultScreen = new ResultScreenHandler(this.stage, ViewsConfig.RESULT_SCREEN_PATH, response);

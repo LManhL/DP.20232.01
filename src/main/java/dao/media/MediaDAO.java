@@ -12,6 +12,7 @@ import java.util.List;
 /**
  * @author
  */
+// functional cohesion
 public class MediaDAO {
 
     public List getAllMedia() throws SQLException {
@@ -50,10 +51,9 @@ public class MediaDAO {
         return null;
     }
 
-
     public void updateMediaFieldById(String tbname, int id, String field, Object value) throws SQLException {
         Statement stm = AIMSDB.getConnection().createStatement();
-        if (value instanceof String){
+        if (value instanceof String) {
             value = "\"" + value + "\"";
         }
         stm.executeUpdate(" update Media set" + " "

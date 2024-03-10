@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 import utils.Utils;
 import views.screen.BaseScreenHandler;
 import views.screen.popup.PopupScreen;
+//functional cohesion
 
 public class ResultScreenHandler extends BaseScreenHandler {
 
@@ -37,7 +38,6 @@ public class ResultScreenHandler extends BaseScreenHandler {
 		}
 	}
 
-
 	protected void setupData(Object dto) throws Exception {
 		Map<String, String> response = (Map<String, String>) dto;
 		resultLabel.setText(response.get("RESULT"));
@@ -56,7 +56,7 @@ public class ResultScreenHandler extends BaseScreenHandler {
 
 	@FXML
 	private Button okButton;
-	
+
 	@FXML
 	private Label messageLabel;
 

@@ -33,8 +33,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
 
+//functional cohesion
 
-public class LoginScreenHandler extends BaseScreenHandler{
+public class LoginScreenHandler extends BaseScreenHandler {
 
     public static Logger LOGGER = Utils.getLogger(LoginScreenHandler.class.getName());
 
@@ -44,7 +45,7 @@ public class LoginScreenHandler extends BaseScreenHandler{
     @FXML
     private PasswordField password;
 
-    public LoginScreenHandler(Stage stage, String screenPath) throws IOException{
+    public LoginScreenHandler(Stage stage, String screenPath) throws IOException {
         super(stage, screenPath);
         try {
             setupData(null);

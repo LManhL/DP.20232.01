@@ -2,6 +2,7 @@ package entity.shipping;
 
 import entity.order.Order;
 import org.example.DistanceCalculator;
+//functional cohesion
 
 public class DeliveryInfo {
 
@@ -12,7 +13,8 @@ public class DeliveryInfo {
     protected String shippingInstructions;
     protected DistanceCalculator distanceCalculator;
 
-    public DeliveryInfo(String name, String phone, String province, String address, String shippingInstructions, DistanceCalculator distanceCalculator) {
+    public DeliveryInfo(String name, String phone, String province, String address, String shippingInstructions,
+            DistanceCalculator distanceCalculator) {
         this.name = name;
         this.phone = phone;
         this.province = province;
