@@ -21,6 +21,14 @@ import subsystem.InterbankSubsystem;
  * @author hieud
  *
  */
+
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính xử lý yêu cầu người dùng
+ * gửi đến thông qua PaymentScreenHandler
+ * @Nguyen Van Manh
+ */
+
 public class PaymentController extends BaseController {
 
 	/**

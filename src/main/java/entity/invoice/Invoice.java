@@ -2,6 +2,12 @@ package entity.invoice;
 
 import entity.order.Order;
 
+/**
+ * Mức cohesion: Communication cohesion
+ * Do các phương thức trong class này dùng chung thuộc tính
+ * @Nguyen Van Manh
+ */
+
 public class Invoice {
 
     private Order order;

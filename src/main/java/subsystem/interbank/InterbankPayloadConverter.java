@@ -13,6 +13,14 @@ import java.util.Map;
 /**
  * @author
  */
+
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * chuyển đổi Payload của Interbank
+ * @Nguyen Van Manh
+ */
+
 public class InterbankPayloadConverter {
 
     /**

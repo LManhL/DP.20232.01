@@ -33,6 +33,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
 
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * giúp hiển thị và tương tác với giao diện LoginScreenHandler
+ * @Nguyen Van Manh
+ */
 
 public class LoginScreenHandler extends BaseScreenHandler{
 

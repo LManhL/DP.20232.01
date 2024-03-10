@@ -2,6 +2,12 @@ package entity.order;
 
 import entity.media.Media;
 
+/**
+ * Mức cohesion: Communication cohesion
+ * Do các phương thức trong class này dùng chung thuộc tính
+ * @Nguyen Van Manh
+ */
+
 public class OrderItem {
     
     private Media media;

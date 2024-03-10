@@ -1,5 +1,11 @@
 package entity.user;
 
+/**
+ * Mức cohesion: Communication cohesion
+ * Do các phương thức trong class này dùng chung thuộc tính
+ * @Nguyen Van Manh
+ */
+
 public class User {
     
     private int id;

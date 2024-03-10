@@ -15,6 +15,13 @@ import utils.Utils;
 import views.screen.BaseScreenHandler;
 import views.screen.popup.PopupScreen;
 
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * giúp hiển thị và tương tác với giao diện IntroScreenHandler
+ * @Nguyen Van Manh
+ */
+
 public class IntroScreenHandler extends BaseScreenHandler {
 
     private static final Logger LOGGER = Utils.getLogger(IntroScreenHandler.class.getName());

@@ -28,6 +28,13 @@ import java.util.HashMap;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * giúp hiển thị và tương tác với giao diện ShippingScreenHandler
+ * @Nguyen Van Manh
+ */
+
 public class ShippingScreenHandler extends BaseScreenHandler {
 
 	private static final Logger LOGGER = Utils.getLogger(ShippingScreenHandler.class.getName());

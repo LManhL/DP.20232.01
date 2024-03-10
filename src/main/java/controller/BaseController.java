@@ -10,6 +10,12 @@ import entity.media.Media;
  * This class is the base controller for our AIMS project
  * @author nguyenlm
  */
+
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính, đó là quản lý giỏ hàng
+ * @Nguyen Van Manh
+ */
 public class BaseController {
     
     /**

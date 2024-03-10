@@ -12,6 +12,12 @@ import views.screen.ViewsConfig;
 
 import java.io.IOException;
 
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * giúp hiển thị và tương tác với giao diện PopupScreen
+ * @Nguyen Van Manh
+ */
 
 public class PopupScreen extends BaseScreenHandler {
 

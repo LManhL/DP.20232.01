@@ -10,6 +10,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * hỗ trợ cho việc quản lý dữ liệu liên quan đến Order
+ * @Nguyen Van Manh
+ */
+
 public class Order {
 
     private int shippingFees;

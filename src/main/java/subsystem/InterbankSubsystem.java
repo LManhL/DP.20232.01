@@ -11,6 +11,14 @@ import subsystem.interbank.InterbankSubsystemController;
  * @author hieud
  *
  */
+
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * tương tác với InterbankSubsystem
+ * @Nguyen Van Manh
+ */
+
 public class InterbankSubsystem implements InterbankInterface {
 
 	/**

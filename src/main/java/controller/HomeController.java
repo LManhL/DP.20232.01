@@ -9,6 +9,14 @@ import dao.media.MediaDAO;
  * This class controls the flow of events in homescreen
  * @author nguyenlm
  */
+
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính xử lý yêu cầu người dùng
+ * gửi đến thông qua HomeScreenHandler
+ * @Nguyen Van Manh
+ */
+
 public class HomeController extends BaseController {
 
 

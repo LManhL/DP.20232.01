@@ -8,6 +8,13 @@ import java.util.logging.Logger;
 import java.sql.Connection;
 import utils.*;
 
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * hỗ trợ cho việc kết nối với DB
+ * @Nguyen Van Manh
+ */
+
 public class AIMSDB {
 
 	private static Logger LOGGER = Utils.getLogger(Connection.class.getName());

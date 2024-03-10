@@ -35,6 +35,12 @@ import views.screen.ViewsConfig;
 import views.screen.cart.CartScreenHandler;
 import views.screen.popup.PopupScreen;
 
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * giúp hiển thị và tương tác với giao diện HomeScreenHandler
+ * @Nguyen Van Manh
+ */
 
 public class HomeScreenHandler extends BaseScreenHandler implements Observer {
 

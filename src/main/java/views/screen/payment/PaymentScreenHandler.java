@@ -17,6 +17,13 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.logging.Logger;
 
+/**
+ * Mức cohesion: Functional cohesion
+ * Do các phương thức trong class này hoạt động cùng một mục đích chức năng chính là
+ * giúp hiển thị và tương tác với giao diện PaymentScreenHandler
+ * @Nguyen Van Manh
+ */
+
 public class PaymentScreenHandler extends BaseScreenHandler {
 
 	private static final Logger LOGGER = Utils.getLogger(PaymentScreenHandler.class.getName());
