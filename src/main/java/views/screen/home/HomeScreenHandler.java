@@ -35,6 +35,10 @@ import views.screen.ViewsConfig;
 import views.screen.cart.CartScreenHandler;
 import views.screen.popup.PopupScreen;
 
+    /*
+        Lang Thành Long 20194098
+        Temporal Cohesion
+     */
 
 public class HomeScreenHandler extends BaseScreenHandler implements Observer {
 

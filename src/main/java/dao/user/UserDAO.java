@@ -14,7 +14,7 @@ import java.util.Date;
  */
 public class UserDAO {
 
-    public User authenticate(String email, String encryptedPassword) throws SQLException {
+    public User authenticate(String email, String encryptedPassword) throws SQLException { // Data Coupling
         String sql = "SELECT * FROM User " +
                 "where email = '" + email + "' and encrypted_password = '" + encryptedPassword + "'";
         ResultSet res =  AIMSDB.getConnection().createStatement().executeQuery(sql);

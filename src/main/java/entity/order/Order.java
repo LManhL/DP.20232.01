@@ -9,7 +9,10 @@ import views.screen.ViewsConfig;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
+/*
+    Lang Thành Long 20194098
+    Phương thức khởi tạo có tham số là Cart -> Stamp Coupling
+ */
 public class Order {
 
     private int shippingFees;

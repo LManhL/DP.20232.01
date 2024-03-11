@@ -10,6 +10,12 @@ import entity.media.Media;
  * This class is the base controller for our AIMS project
  * @author nguyenlm
  */
+
+/*
+    Lang Thành Long 20194098
+    Common Coupling và Content Coupling khi thay đổi giá trị static của SessionInformation.
+    Ở phương thức checkMediaInCart có Stamp Coupling vì sử dụng toàn bộ entity Media làm tham số
+ */
 public class BaseController {
     
     /**
@@ -17,7 +23,7 @@ public class BaseController {
      * @param media
      * @return CartMedia or null
      */
-    public CartItem checkMediaInCart(Media media){
+    public CartItem checkMediaInCart(Media media){ // Stamp Coupling
         return SessionInformation.cartInstance.checkMediaInCart(media);
     }
 

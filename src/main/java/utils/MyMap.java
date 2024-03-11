@@ -12,6 +12,11 @@ import java.util.*;
  * @author hieud
  *
  */
+
+	/*
+		Lang Thành Long 20194098
+		Logical Cohesion
+	 */
 public class MyMap extends LinkedHashMap<String, Object> {
 	private static final long serialVersionUID = 1L;
 

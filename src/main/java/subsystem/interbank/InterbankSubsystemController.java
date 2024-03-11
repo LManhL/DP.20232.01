@@ -2,7 +2,10 @@ package subsystem.interbank;
 
 import entity.payment.CreditCard;
 import entity.payment.PaymentTransaction;
-
+/*
+	Lang Thành Long 20194098
+	Common Coupling và Content Coupling khi thay đổi giá trị của 2 thuộc tính static là interbankPayloadConverter và interbankBoundary
+ */
 public class InterbankSubsystemController {
 
 	private static InterbankPayloadConverter interbankPayloadConverter = new InterbankPayloadConverter();

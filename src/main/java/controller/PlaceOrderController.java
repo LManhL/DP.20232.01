@@ -21,6 +21,13 @@ import java.util.regex.Pattern;
  * This class controls the flow of place order usecase in our AIMS project
  * @author nguyenlm
  */
+/*
+    Lang Thành Long 20194098
+    Common Coupling và Content Coupling do thay đổi các thuộc tính static của Class SessionInformation
+    ở các phương thức validatePhoneNumber, validateName, validateAddress chỉ truyền vào các thông tin cần thiết -> Data Coupling
+
+    Coincidental Cohesion - các phương thức validate dữ liệu ở trong class liên quan đến Order
+ */
 public class PlaceOrderController extends BaseController {
 
     /**

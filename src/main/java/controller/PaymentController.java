@@ -21,6 +21,13 @@ import subsystem.InterbankSubsystem;
  * @author hieud
  *
  */
+/*
+	Lang Thành Long 20194098
+	Phương thức payOrder truyền vào từng thông tin làm tham số -> Data Coupling
+
+	Coincidental Cohesion - thêm các phương thức về làm trống giỏ hàng và ngày hết hạn của thẻ.
+
+ */
 public class PaymentController extends BaseController {
 
 	/**
@@ -82,7 +89,7 @@ public class PaymentController extends BaseController {
 	 *         message.
 	 */
 	public Map<String, String> payOrder(int amount, String contents, String cardNumber, String cardHolderName,
-			String expirationDate, String securityCode) {
+			String expirationDate, String securityCode) { // Data Coupling
 		Map<String, String> result = new Hashtable<String, String>();
 		result.put("RESULT", "PAYMENT FAILED!");
 		try {
