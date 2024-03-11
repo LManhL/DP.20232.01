@@ -22,6 +22,8 @@ import java.util.Objects;
 /*
     Lang Thành Long 20194098
     Vi phạm vào Common Coupling và Content Coupling do đã thay đổi các thuộc tính Static của lớp SessionInformaition.
+
+    Functional Cohesion - các phương thức của lớp này cùng thực hiện việc xác thực của người dùng.
  */
 public class AuthenticationController extends BaseController {
 

@@ -32,7 +32,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
-
+    /*
+        Lang Thành Long 20194098
+        Temporal Cohesion
+     */
 
 public class LoginScreenHandler extends BaseScreenHandler{
 

@@ -19,6 +19,8 @@ import java.util.logging.Logger;
 /*
 	Lang Thành Long 20194098
 	Common Coupling và Content Coupling
+
+	Logical Cohesion - các phương thức làm cùng 1 loại việc
  */
 public class ApplicationProgrammingInterface {
 

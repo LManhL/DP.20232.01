@@ -25,6 +25,8 @@ import subsystem.InterbankSubsystem;
 	Lang Thành Long 20194098
 	Phương thức payOrder truyền vào từng thông tin làm tham số -> Data Coupling
 
+	Coincidental Cohesion - thêm các phương thức về làm trống giỏ hàng và ngày hết hạn của thẻ.
+
  */
 public class PaymentController extends BaseController {
 
