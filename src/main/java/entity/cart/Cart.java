@@ -7,6 +7,9 @@ import java.util.List;
 import common.exception.MediaNotAvailableException;
 import entity.media.Media;
 
+/**
+ * Functional Cohesion: các chức năng liên quan tới giỏ hàng
+ */
 public class Cart {
     
     private List<CartItem> lstCartItem;

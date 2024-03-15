@@ -27,7 +27,10 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
-
+/**
+ * Functional Cohesion: Các chức năng có liên quan chặt chẽ với nhau,
+ * cùng chung mục đích để xử lí trên giao diện màn hình Shipping
+ */
 public class ShippingScreenHandler extends BaseScreenHandler {
 
 	private static final Logger LOGGER = Utils.getLogger(ShippingScreenHandler.class.getName());

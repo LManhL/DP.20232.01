@@ -1,5 +1,7 @@
 package entity.user;
-
+/**
+ * Functional Cohesion: các chức năng liên quan tới User
+ */
 public class User {
     
     private int id;

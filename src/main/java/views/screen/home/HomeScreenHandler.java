@@ -35,7 +35,10 @@ import views.screen.ViewsConfig;
 import views.screen.cart.CartScreenHandler;
 import views.screen.popup.PopupScreen;
 
-
+/**
+ * Functional Cohesion: Các chức năng có liên quan chặt chẽ với nhau,
+ * cùng chung mục đích để xử lí trên giao diện màn hình Home
+ */
 public class HomeScreenHandler extends BaseScreenHandler implements Observer {
 
     public static Logger LOGGER = Utils.getLogger(HomeScreenHandler.class.getName());

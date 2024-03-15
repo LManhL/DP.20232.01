@@ -2,7 +2,9 @@ package entity.shipping;
 
 import entity.order.Order;
 import org.example.DistanceCalculator;
-
+/**
+ * Functional Cohesion: các chức năng liên quan tới thông tin giao hàng
+ */
 public class DeliveryInfo {
 
     protected String name;

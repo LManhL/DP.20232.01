@@ -15,7 +15,10 @@ import javafx.stage.Stage;
 import utils.Utils;
 import views.screen.BaseScreenHandler;
 import views.screen.popup.PopupScreen;
-
+/**
+ * Functional Cohesion: Các chức năng có liên quan chặt chẽ với nhau,
+ * cùng chung mục đích để xử lí trên giao diện màn hình Result
+ */
 public class ResultScreenHandler extends BaseScreenHandler {
 
 	private static final Logger LOGGER = Utils.getLogger(PaymentScreenHandler.class.getName());

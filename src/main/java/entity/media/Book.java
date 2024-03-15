@@ -7,7 +7,9 @@ import java.util.Date;
 import java.util.List;
 
 import entity.db.AIMSDB;
-
+/**
+ * Functional Cohesion: các chức năng liên quan tới Book
+ */
 public class Book extends Media {
 
     String author;

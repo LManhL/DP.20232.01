@@ -1,7 +1,9 @@
 package entity.order;
 
 import entity.media.Media;
-
+/**
+ * Functional Cohesion: các chức năng liên quan tới OrderItem
+ */
 public class OrderItem {
     
     private Media media;

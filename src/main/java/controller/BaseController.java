@@ -10,6 +10,12 @@ import entity.media.Media;
  * This class is the base controller for our AIMS project
  * @author nguyenlm
  */
+
+/**
+ * Communicational cohesion: 2 phương thức đều thao tác trên cùng dữ liệu Cart
+ * là SessionInformation.cartInstance để thực hiện các chức năng về kiểm tra sản phẩm trong giỏ và
+ * lấy danh sách sản phẩm trong giỏ hàng
+ */
 public class BaseController {
     
     /**

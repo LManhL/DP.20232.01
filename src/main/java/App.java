@@ -16,6 +16,10 @@ import views.screen.ViewsConfig;
 import views.screen.home.*;
 import views.screen.intro.IntroScreenHandler;
 
+/**
+ * Procedural Cohesion: các phương thức được thực hiện theo trình tự để khởi chạy ứng dụng,
+ * main để chạy chương trình và sau đó start thực hiển 1 loạt các bước để khởi tạo, hiển thị ứng dụng
+ */
 public class App extends Application {
 
 	@FXML

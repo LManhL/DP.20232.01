@@ -21,6 +21,11 @@ import subsystem.InterbankSubsystem;
  * @author hieud
  *
  */
+
+/**
+ * Procedural Cohesion: các phương thức đặt với nhau chỉ để đảm bảo thứ tự thực thi cụ thể. Sau khi thanh
+ * toán thì thực hiện xóa giỏ hàng
+ */
 public class PaymentController extends BaseController {
 
 	/**

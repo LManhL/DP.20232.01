@@ -11,6 +11,11 @@ import subsystem.interbank.InterbankSubsystemController;
  * @author hieud
  *
  */
+
+/**
+ * Functional Cohesion: các chức năng liên quan tới giao dịch liên ngân hàng về đơn hàng, gồm thanh toán
+ * đơn hàng và hoàn tiền
+ */
 public class InterbankSubsystem implements InterbankInterface {
 
 	/**

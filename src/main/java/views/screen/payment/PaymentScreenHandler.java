@@ -16,7 +16,10 @@ import views.screen.popup.PopupScreen;
 import java.io.IOException;
 import java.util.Map;
 import java.util.logging.Logger;
-
+/**
+ * Functional Cohesion: Các chức năng có liên quan chặt chẽ với nhau,
+ * cùng chung mục đích để xử lí trên giao diện màn hình Payment
+ */
 public class PaymentScreenHandler extends BaseScreenHandler {
 
 	private static final Logger LOGGER = Utils.getLogger(PaymentScreenHandler.class.getName());

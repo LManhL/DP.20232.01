@@ -13,6 +13,11 @@ import java.util.Map;
 /**
  * @author
  */
+
+/**
+ * Procedural Cohesion: liên quan tới thứ tự thực hiện: tạo payload yêu cầu liên ngân hàng và
+ * phân tích phản hổi để trích xuất thông tin thanh toán.
+ */
 public class InterbankPayloadConverter {
 
     /**

@@ -9,7 +9,9 @@ import views.screen.ViewsConfig;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
+/**
+ * Functional Cohesion: các chức năng liên quan tới đơn hàng
+ */
 public class Order {
 
     private int shippingFees;

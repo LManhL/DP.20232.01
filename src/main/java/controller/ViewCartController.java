@@ -8,6 +8,10 @@ import entity.cart.Cart;
  * This class controls the flow of events when users view the Cart
  * @author nguyenlm
  */
+
+/**
+ * Functional Cohesion: 2 phương thức tập trung vào chức năng cung cấp thông tin về giỏ hàng
+ */
 public class ViewCartController extends BaseController{
     
     /**
