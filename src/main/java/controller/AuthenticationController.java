@@ -14,7 +14,6 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 
-
 /**
  * @author
  */
@@ -59,7 +58,6 @@ public class AuthenticationController extends BaseController {
      * @param message - plain text as {@link String String}.
      * @return cipher text as {@link String String}.
      */
-    // coincidental cohesion: nên tách vào class chứa các hàm dùng chung
     private String md5(String message) {
         String digest = null;
         try {

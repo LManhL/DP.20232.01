@@ -42,7 +42,6 @@ public class Cart {
         return total;
     }
 
-    // communicational cohesion: phương thức tính tống tiền các mặt hàng trong giỏ hàng là không cần thiết
     public int calSubtotal(){
         int total = 0;
         for (Object obj : lstCartItem) {
