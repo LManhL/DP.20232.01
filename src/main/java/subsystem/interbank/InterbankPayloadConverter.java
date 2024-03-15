@@ -13,6 +13,7 @@ import java.util.Map;
 /**
  * @author
  */
+//coincidental cohesion
 public class InterbankPayloadConverter {
 
     /**
