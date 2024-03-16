@@ -2,6 +2,7 @@ package subsystem.interbank;
 
 import entity.payment.CreditCard;
 import entity.payment.PaymentTransaction;
+// vi phạm OCP: yêu cầu thêm loại thẻ khác trong tương lai sẽ phải sửa code
 
 public class InterbankSubsystemController {
 
