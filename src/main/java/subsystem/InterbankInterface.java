@@ -12,6 +12,8 @@ import entity.payment.PaymentTransaction;
  * @author hieud
  * 
  */
+// vi phạm OCP: yêu cầu thêm loại thẻ khác trong tương lai sẽ phải sửa code
+
 public interface InterbankInterface {
 
 	/**

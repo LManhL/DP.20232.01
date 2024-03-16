@@ -11,6 +11,8 @@ import subsystem.interbank.InterbankSubsystemController;
  * @author hieud
  *
  */
+// vi phạm OCP: yêu cầu thêm loại thẻ khác trong tương lai sẽ phải sửa code
+
 public class InterbankSubsystem implements InterbankInterface {
 
 	/**

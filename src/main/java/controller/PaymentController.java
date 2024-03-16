@@ -13,7 +13,6 @@ import entity.payment.PaymentTransaction;
 import subsystem.InterbankInterface;
 import subsystem.InterbankSubsystem;
 
-
 /**
  * This {@code PaymentController} class control the flow of the payment process
  * in our AIMS Software.
@@ -21,6 +20,11 @@ import subsystem.InterbankSubsystem;
  * @author hieud
  *
  */
+
+// vi phạm SRP: phần xử lý ngày thẻ hết hạn nên được tách ra để controller chỉ
+// có nhiệm vụ xử lý thanh toán
+
+// vi phạm OCP: nếu thêm các loại thẻ khác thì phải sửa code
 public class PaymentController extends BaseController {
 
 	/**
@@ -103,7 +107,7 @@ public class PaymentController extends BaseController {
 		return result;
 	}
 
-	public void emptyCart(){
-        SessionInformation.cartInstance.emptyCart();
-    }
+	public void emptyCart() {
+		SessionInformation.cartInstance.emptyCart();
+	}
 }
