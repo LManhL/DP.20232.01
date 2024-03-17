@@ -3,6 +3,11 @@ package entity.shipping;
 import entity.order.Order;
 import org.example.DistanceCalculator;
 
+/*
+ * Class DeliveryInfo vi phạm nguyên tắc OCP do khi thay đổi hoặc thêm cách
+ * tính phí giao hàng, phương thức calculateShippingFee sẽ phải thay đổi
+ * 
+ */
 public class DeliveryInfo {
 
     protected String name;

@@ -11,6 +11,12 @@ import subsystem.interbank.InterbankSubsystemController;
  * @author hieud
  *
  */
+
+ /*
+	* Class InterBankSubsystem vi phạm nguyên tắc OCP do khi thêm phương thức thanh
+	* toán mới, các class và interface của InterBank sẽ phải thay đổi để phù hợp với
+	* thẻ nội địa
+  */
 public class InterbankSubsystem implements InterbankInterface {
 
 	/**
