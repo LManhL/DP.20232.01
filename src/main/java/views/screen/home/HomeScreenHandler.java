@@ -35,6 +35,7 @@ import views.screen.ViewsConfig;
 import views.screen.cart.CartScreenHandler;
 import views.screen.popup.PopupScreen;
 
+// vi phạm OCP: class này vừa thực hiện viêc xử lý màn hình (hiển thị, điều hướng), vừa có chức năng liên quan đến giỏ hàng
 
 public class HomeScreenHandler extends BaseScreenHandler implements Observer {
 

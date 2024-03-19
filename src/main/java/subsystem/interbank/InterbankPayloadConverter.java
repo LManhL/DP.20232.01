@@ -14,6 +14,8 @@ import java.util.Map;
  * @author
  */
 
+// vi phạm OCP: đang cố định xử lý với CrediCard, nếu có loại thẻ khác sẽ phải sửa code
+
 public class InterbankPayloadConverter {
 
     /**

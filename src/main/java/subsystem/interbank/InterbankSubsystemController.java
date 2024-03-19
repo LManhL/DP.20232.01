@@ -3,6 +3,8 @@ package subsystem.interbank;
 import entity.payment.CreditCard;
 import entity.payment.PaymentTransaction;
 
+// vi phạm OCP: đang cố định xử lý với CrediCard, nếu có loại thẻ khác sẽ phải sửa code
+
 public class InterbankSubsystemController {
 
 	private static InterbankPayloadConverter interbankPayloadConverter = new InterbankPayloadConverter();

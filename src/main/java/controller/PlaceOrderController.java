@@ -22,6 +22,9 @@ import java.util.regex.Pattern;
  * @author nguyenlm
  */
 
+// vi phạm SRP: nên tách phần tách các hàm validate việc đặt hàng ra class riêng
+// vi phạm OCP: phụ thuộc vào distanceCalculator
+
 public class PlaceOrderController extends BaseController {
 
     /**

@@ -3,6 +3,8 @@ package entity.shipping;
 import entity.order.Order;
 import org.example.DistanceCalculator;
 
+// vi phạm SRP: là class entity nên không cần thực hiện tính toán trực tiếp phí ship tại đây
+
 public class DeliveryInfo {
 
     protected String name;
