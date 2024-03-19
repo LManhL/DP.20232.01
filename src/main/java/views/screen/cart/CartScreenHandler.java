@@ -26,6 +26,8 @@ import views.screen.ViewsConfig;
 import views.screen.popup.PopupScreen;
 import views.screen.shipping.ShippingScreenHandler;
 
+// functional cohesion: các method xử lý  với giao diện cart
+
 public class CartScreenHandler extends BaseScreenHandler {
 	private static Logger LOGGER = Utils.getLogger(CartScreenHandler.class.getName());
 

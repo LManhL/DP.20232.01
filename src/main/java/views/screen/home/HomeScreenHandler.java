@@ -35,6 +35,7 @@ import views.screen.ViewsConfig;
 import views.screen.cart.CartScreenHandler;
 import views.screen.popup.PopupScreen;
 
+// communicational cohesion: do có nhiều chức năng
 
 public class HomeScreenHandler extends BaseScreenHandler implements Observer {
 

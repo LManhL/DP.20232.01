@@ -1,5 +1,7 @@
 package entity.user;
 
+// functional cohesion
+
 public class User {
     
     private int id;

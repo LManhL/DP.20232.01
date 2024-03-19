@@ -6,6 +6,8 @@ import entity.cart.Cart;
 import entity.cart.CartItem;
 import entity.media.Media;
 
+//  communicational cohesion: các method thao tác trên cùng dữ liệu cart (giỏ hàng)
+
 /**
  * This class is the base controller for our AIMS project
  * @author nguyenlm

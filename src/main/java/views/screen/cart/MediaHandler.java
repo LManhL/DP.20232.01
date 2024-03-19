@@ -25,6 +25,8 @@ import utils.Utils;
 import views.screen.FXMLScreenHandler;
 import views.screen.ViewsConfig;
 
+// functional cohesion: các method xử lý với giao diện media
+
 public class MediaHandler extends FXMLScreenHandler {
 
 	private static Logger LOGGER = Utils.getLogger(MediaHandler.class.getName());

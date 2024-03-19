@@ -17,6 +17,8 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.logging.Logger;
 
+// Logical cohesion: các method trong module liên kết với nhau về logic khi gọi API ngoài hệ thống còn không có liên kết về chức năng
+
 public class ApplicationProgrammingInterface {
 
 	public static DateFormat DATE_FORMATTER = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");

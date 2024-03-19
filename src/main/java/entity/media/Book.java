@@ -8,6 +8,8 @@ import java.util.List;
 
 import entity.db.AIMSDB;
 
+// functional cohesion
+
 public class Book extends Media {
 
     String author;

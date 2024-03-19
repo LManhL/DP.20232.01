@@ -8,6 +8,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Logger;
 
+// functional cohesion
+
 /**
  * The general media class, for another media it can be done by inheriting this class
  * @author nguyenlm

@@ -12,7 +12,7 @@ import views.screen.ViewsConfig;
 
 import java.io.IOException;
 
-
+// functional cohesion: xử lý giao diện popup
 public class PopupScreen extends BaseScreenHandler {
 
     @FXML
@@ -67,9 +67,11 @@ public class PopupScreen extends BaseScreenHandler {
         delay.play();
     }
 
+    // coincidental cohesion
     protected void setupData(Object dto) throws Exception {
     }
 
+    // coincidental cohesion
     protected void setupFunctionality() throws Exception {
     }
 }

@@ -12,6 +12,8 @@ import javafx.scene.layout.VBox;
 import views.screen.FXMLScreenHandler;
 import views.screen.ViewsConfig;
 
+// functional cohesion
+
 public class MediaInvoiceScreenHandler extends FXMLScreenHandler{
 
     @FXML

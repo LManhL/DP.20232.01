@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+// functional cohesion
+
 public class Order {
 
     private int shippingFees;

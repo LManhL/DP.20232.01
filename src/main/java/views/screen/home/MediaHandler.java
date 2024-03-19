@@ -25,6 +25,8 @@ import views.screen.FXMLScreenHandler;
 import views.screen.ViewsConfig;
 import views.screen.popup.PopupScreen;
 
+// coincidental cohesion
+
 public class MediaHandler extends FXMLScreenHandler implements Observable {
 
     @FXML

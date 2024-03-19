@@ -15,6 +15,8 @@ import utils.Utils;
 import views.screen.BaseScreenHandler;
 import views.screen.popup.PopupScreen;
 
+// functional cohesion: các method xử lý trên giao diện intro
+
 public class IntroScreenHandler extends BaseScreenHandler {
 
     private static final Logger LOGGER = Utils.getLogger(IntroScreenHandler.class.getName());

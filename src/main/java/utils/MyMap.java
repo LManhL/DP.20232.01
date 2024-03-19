@@ -3,6 +3,8 @@ package utils;
 import java.lang.reflect.Field;
 import java.util.*;
 
+// functional cohesion: các method liên quan đến việc chuyển đổi dữ liệu
+
 /**
  * The {@link MyMap JSON} class represents JSON objects.
  * To create a new JSON object,
