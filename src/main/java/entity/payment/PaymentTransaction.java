@@ -1,5 +1,7 @@
 package entity.payment;
 
+// vi phạm OCP: khó mở rộng nếu thay đổi/bổ sung phương thức thanh toán (do gắn với CreditCard)
+
 public class PaymentTransaction {
 	private String errorCode;
 	private CreditCard card;

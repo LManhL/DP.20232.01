@@ -26,6 +26,7 @@ public class PaymentController extends BaseController {
 	/**
 	 * Represent the card used for payment
 	 */
+	// nếu có thêm loại thẻ hay phương thức thanh toán thì sẽ cần sửa class
 	private CreditCard card;
 
 	/**
@@ -102,7 +103,7 @@ public class PaymentController extends BaseController {
 		}
 		return result;
 	}
-
+	//	 vi phạm SRP: nên để vào class quản lý giỏ hàng
 	public void emptyCart(){
         SessionInformation.cartInstance.emptyCart();
     }

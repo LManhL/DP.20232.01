@@ -7,6 +7,8 @@ import java.util.List;
 import common.exception.MediaNotAvailableException;
 import entity.media.Media;
 
+// vi phạm SRP: class vừa quản lý giỏ hàng vừa thực hiện tính toán
+
 public class Cart {
     
     private List<CartItem> lstCartItem;

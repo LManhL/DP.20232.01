@@ -3,6 +3,8 @@ package entity.payment;
 /**
  * @author
  */
+
+// vi phạm OCP: khó mở rộng nếu thay đổi/bổ sung phương thức thanh toán
 public class CreditCard {
 
     private String cardCode;
