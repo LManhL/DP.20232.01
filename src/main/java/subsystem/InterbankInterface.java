@@ -12,6 +12,10 @@ import entity.payment.PaymentTransaction;
  * @author hieud
  * 
  */
+
+/**
+ * OCP: Khi có phương thức thanh toán mới sẽ phải sửa code do đang xử lý cố định với CreditCard
+ */
 public interface InterbankInterface {
 
 	/**

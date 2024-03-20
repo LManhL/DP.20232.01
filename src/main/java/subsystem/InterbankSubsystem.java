@@ -11,6 +11,10 @@ import subsystem.interbank.InterbankSubsystemController;
  * @author hieud
  *
  */
+
+/**
+ * OCP: Khi có phương thức thanh toán mới sẽ phải sửa code do đang xử lý cố định với CreditCard
+ */
 public class InterbankSubsystem implements InterbankInterface {
 
 	/**

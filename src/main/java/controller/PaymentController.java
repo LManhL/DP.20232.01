@@ -21,6 +21,14 @@ import subsystem.InterbankSubsystem;
  * @author hieud
  *
  */
+
+/**
+ * SRP: phương thức làm trống giỏ hàng nên được tách ra vào class liên quan tới xử lý
+ * giỏ hàng để class này tập trung vào chức năng thanh toán
+ *
+ * OCP: Khi có thêm phương thức thanh toán mới sẽ cần phải sửa đổi class do mới chỉ đang xử lý
+ * với CreditCard
+ */
 public class PaymentController extends BaseController {
 
 	/**

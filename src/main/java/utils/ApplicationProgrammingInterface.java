@@ -17,6 +17,10 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.logging.Logger;
 
+/**
+ * SRP: Class đang thực hiện nhiều nhiệm vụ khác nhau như thực hiện các yêu cầu HTTP Get và Patch, thiết
+ * lập kết nối HTTP, cho phép các phương thức HTTP được chỉ định. Cần tách ra vào các class khác nhau.
+ */
 public class ApplicationProgrammingInterface {
 
 	public static DateFormat DATE_FORMATTER = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");

@@ -14,6 +14,9 @@ import java.util.Map;
  * @author
  */
 
+/**
+ * OCP: Khi có phương thức thanh toán mới sẽ phải sửa code do đang xử lý cố định với CreditCard
+ */
 public class InterbankPayloadConverter {
 
     /**

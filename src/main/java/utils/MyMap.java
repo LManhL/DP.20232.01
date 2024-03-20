@@ -12,6 +12,11 @@ import java.util.*;
  * @author hieud
  *
  */
+
+/**
+ * SRP: Class đang thực hiện các chức năng với các mục đích khác nhau như chuyển đổi Object sang Map,
+ * chuyển đổi JSON String sang Map, chuyển đổi MyMap sang JSON. Có thể tách thành các class riêng biệt.
+ */
 public class MyMap extends LinkedHashMap<String, Object> {
 	private static final long serialVersionUID = 1L;
 

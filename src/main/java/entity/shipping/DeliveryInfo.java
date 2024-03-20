@@ -3,6 +3,9 @@ package entity.shipping;
 import entity.order.Order;
 import org.example.DistanceCalculator;
 
+/**
+ * OCP: Khi sử dụng thư viện tính toán khoảng cách khác thay vì DistanceCalculator sẽ phải sửa code
+ */
 public class DeliveryInfo {
 
     protected String name;

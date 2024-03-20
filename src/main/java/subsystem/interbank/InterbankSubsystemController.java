@@ -3,6 +3,9 @@ package subsystem.interbank;
 import entity.payment.CreditCard;
 import entity.payment.PaymentTransaction;
 
+/**
+ * OCP: Khi có phương thức thanh toán mới sẽ phải sửa code do đang xử lý cố định với CreditCard
+ */
 public class InterbankSubsystemController {
 
 	private static InterbankPayloadConverter interbankPayloadConverter = new InterbankPayloadConverter();
