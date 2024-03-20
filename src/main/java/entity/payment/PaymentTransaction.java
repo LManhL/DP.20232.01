@@ -1,5 +1,10 @@
 package entity.payment;
 
+/**
+ * Vi phạm OCP: Do lớp PaymentTransaction phụ thuộc vào CreditCard, vậy nên
+ * khi muốn thay đổi loại Card thì cần phải sửa đổi code
+ */
+
 public class PaymentTransaction {
 	private String errorCode;
 	private CreditCard card;

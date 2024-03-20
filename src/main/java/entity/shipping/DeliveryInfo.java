@@ -3,6 +3,10 @@ package entity.shipping;
 import entity.order.Order;
 import org.example.DistanceCalculator;
 
+/**
+ * Vi phạm OCP: Khi muốn thêm cách tính tiền thì cần phải sửa đổi code
+ */
+
 public class DeliveryInfo {
 
     protected String name;

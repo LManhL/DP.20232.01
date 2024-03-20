@@ -11,6 +11,12 @@ import subsystem.interbank.InterbankSubsystemController;
  * @author hieud
  *
  */
+
+/**
+ * Vi phạm OCP: Do lớp InterbankSubsystem khi muốn thay đổi loại
+ * Card thì cần sửa đổi code
+ */
+
 public class InterbankSubsystem implements InterbankInterface {
 
 	/**
