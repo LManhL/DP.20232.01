@@ -18,6 +18,12 @@ import java.util.Objects;
 /**
  * @author
  */
+
+/**
+ * Vi phạm SRP: Do lớp AuthenticationController phải phụ trách thêm cả việc
+ * xử lý mã hóa thông tin qua hàm String md5(String message)
+ */
+
 public class AuthenticationController extends BaseController {
 
     public boolean isAnonymousSession() {

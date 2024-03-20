@@ -21,6 +21,17 @@ import subsystem.InterbankSubsystem;
  * @author hieud
  *
  */
+
+/**
+ * Vi phạm SRP: Do lớp PaymentController phải phụ trách thêm cả việc
+ * xử lý ngày thẻ hết hạn trong khi đó là trách nhiệm của CreditCard
+ */
+
+/**
+ * Vi phạm OCP: Lớp PaymentController khi muốn thay đổi loại Card
+ * sử dụng thì cần phải sửa đổi code do đang phụ thuộc vào CreditCard
+ */
+
 public class PaymentController extends BaseController {
 
 	/**

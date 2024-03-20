@@ -14,6 +14,11 @@ import java.util.Map;
  * @author
  */
 
+/**
+ * Vi phạm OCP: Do lớp InterbankPayloadConverter khi muốn thay đổi loại
+ * Card thì cần sửa đổi code
+ */
+
 public class InterbankPayloadConverter {
 
     /**

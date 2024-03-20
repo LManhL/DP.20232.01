@@ -22,6 +22,11 @@ import java.util.regex.Pattern;
  * @author nguyenlm
  */
 
+/**
+ * Vi phạm SRP: Do lớp PlaceOrderController phải phụ trách thêm cả việc
+ * Validate thông tin giao hàng trong khi đấy là trách nhiệm của lớp DeliveryInfo
+ */
+
 public class PlaceOrderController extends BaseController {
 
     /**

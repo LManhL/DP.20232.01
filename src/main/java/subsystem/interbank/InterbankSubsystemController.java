@@ -3,6 +3,12 @@ package subsystem.interbank;
 import entity.payment.CreditCard;
 import entity.payment.PaymentTransaction;
 
+
+/**
+ * Vi phạm OCP: Do lớp InterbankSubsystemController khi muốn thay đổi loại
+ * Card thì cần sửa đổi code
+ */
+
 public class InterbankSubsystemController {
 
 	private static InterbankPayloadConverter interbankPayloadConverter = new InterbankPayloadConverter();
