@@ -16,6 +16,11 @@ import utils.Utils;
 import views.screen.BaseScreenHandler;
 import views.screen.popup.PopupScreen;
 
+/**
+ * OCP: Khi muốn thay đổi cách hiển thị thông báo lỗi và nội dung của thông báo lỗi sẽ phải sửa code
+ * do hiện đang xử lý hiển thị thông báo lỗi trên màn hình Popup và nội dung thông báo là cố định nếu
+ * xảy ra lỗi IOException
+ */
 public class ResultScreenHandler extends BaseScreenHandler {
 
 	private static final Logger LOGGER = Utils.getLogger(PaymentScreenHandler.class.getName());

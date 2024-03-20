@@ -1,5 +1,9 @@
 package entity.payment;
 
+/**
+ * OCP: khi có phương thức thanh toán mới (ví dụ Domestic Card) sẽ phải sửa code do đang xử lý cố định
+ * với CreditCard
+ */
 public class PaymentTransaction {
 	private String errorCode;
 	private CreditCard card;

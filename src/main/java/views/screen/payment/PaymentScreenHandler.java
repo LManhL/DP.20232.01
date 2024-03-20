@@ -17,6 +17,11 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.logging.Logger;
 
+/**
+ * OCP: Khi muốn thay đổi cách hiển thị thông báo lỗi và nội dung của thông báo lỗi sẽ phải sửa code
+ * do hiện đang xử lý hiển thị thông báo lỗi trên màn hình Popup và nội dung thông báo là cố định nếu
+ * xảy ra lỗi IOException
+ */
 public class PaymentScreenHandler extends BaseScreenHandler {
 
 	private static final Logger LOGGER = Utils.getLogger(PaymentScreenHandler.class.getName());

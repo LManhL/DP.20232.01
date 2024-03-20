@@ -22,6 +22,13 @@ import java.util.regex.Pattern;
  * @author nguyenlm
  */
 
+/**
+ * SRP: Class đang thực hiện nhiều trách nhiệm khác nhau: xử lý đặt hàng, xử lý thông tin giao
+ * hàng, tạo hoá đơn, xác thực dữ liệu. Cần tách ra thành các class riêng
+ *
+ * OCP: Khi sử dụng thư viện mới thay cho DistanceCalculator sẽ phải sửa code
+ */
+
 public class PlaceOrderController extends BaseController {
 
     /**
