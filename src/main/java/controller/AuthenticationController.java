@@ -13,10 +13,14 @@ import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-
-
 /**
  * @author
+ */
+
+/**
+ * Vi phạm LSP: Vì lớp AuthenticationController không được sử dụng
+ * các hàm kế thừa từ BaseController vì các hàm đó không liên quan gì
+ * đến chức năng class này
  */
 public class AuthenticationController extends BaseController {
 

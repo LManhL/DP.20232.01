@@ -13,6 +13,12 @@ import java.util.Map;
 /**
  * @author
  */
+
+/**
+ * Vi phạm DIP: Vì lớp InterbankPayloadConverter phụ thuộc vào lớp cụ thể là
+ * CreditCard chứ không phải lớp trừu tượng nên dễ bị sửa đổi
+ */
+
 public class InterbankPayloadConverter {
 
     /**
