@@ -12,6 +12,12 @@ import java.util.List;
 /**
  * @author
  */
+
+/**
+ * Vi phạm LSP: Vì các lớp con kế thừa từ class MediaDAO như BookDAO, CDDAO, DVDAO
+ * không thể sử dụng lại các hàm trong class cha
+ */
+
 public class MediaDAO {
 
     public List getAllMedia() throws SQLException {

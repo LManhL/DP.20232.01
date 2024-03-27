@@ -9,6 +9,13 @@ import dao.media.MediaDAO;
  * This class controls the flow of events in homescreen
  * @author nguyenlm
  */
+
+/**
+ * Vi phạm LSP: Vì lớp HomeController không được sử dụng
+ * hàm checkMediaInCart() kế thừa từ BaseController vì
+ * hàm đó không liên quan gì đến chức năng class này
+ */
+
 public class HomeController extends BaseController {
 
 

@@ -12,6 +12,12 @@ import entity.payment.PaymentTransaction;
  * @author hieud
  * 
  */
+
+/**
+ * Vi phạm DIP: Vì lớp InterbankInterface phụ thuộc vào lớp cụ thể là
+ * CreditCard chứ không phải lớp trừu tượng nên dễ bị sửa đổi
+ */
+
 public interface InterbankInterface {
 
 	/**

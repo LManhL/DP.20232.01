@@ -11,6 +11,12 @@ import subsystem.interbank.InterbankSubsystemController;
  * @author hieud
  *
  */
+
+/**
+ * Vi phạm DIP: Vì lớp InterbankSubsystem phụ thuộc vào lớp cụ thể là
+ * CreditCard chứ không phải lớp trừu tượng nên dễ bị sửa đổi
+ */
+
 public class InterbankSubsystem implements InterbankInterface {
 
 	/**
