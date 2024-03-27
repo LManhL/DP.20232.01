@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-
+// vi phạm LSP: kế thừa class BaseController nhưng chức năng không có liên hệ gì và cũng không thay thế được class BaseController
 
 /**
  * @author

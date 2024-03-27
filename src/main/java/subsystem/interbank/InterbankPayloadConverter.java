@@ -55,6 +55,7 @@ public class InterbankPayloadConverter {
 
         if (response == null)
             return null;
+        // vi phạm DIP
         MyMap transaction = (MyMap) response.get("transaction");
         CreditCard card = new CreditCard(
                 (String) transaction.get("cardCode"),
@@ -62,6 +63,7 @@ public class InterbankPayloadConverter {
                 (String) transaction.get("dateExpired"),
                 Integer.parseInt((String) transaction.get("cvvCode")));
 
+        // vi phạm DIP
         PaymentTransaction trans = new PaymentTransaction(
                 (String) response.get("errorCode"),
                 card,
