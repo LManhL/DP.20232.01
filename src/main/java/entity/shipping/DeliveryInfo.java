@@ -2,7 +2,7 @@ package entity.shipping;
 
 import entity.order.Order;
 import org.example.DistanceCalculator;
-
+// DIP: DeliveryInfo phụ thuộc vào lớp DistanceCalculator là lớp cài đặt chi tiết 
 public class DeliveryInfo {
 
     protected String name;

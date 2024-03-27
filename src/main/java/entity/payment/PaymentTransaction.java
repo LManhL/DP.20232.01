@@ -1,5 +1,5 @@
 package entity.payment;
-
+//DIP: PaymentTransaction phụ thuộc vào lớp cụ thể là CreditCard
 public class PaymentTransaction {
 	private String errorCode;
 	private CreditCard card;

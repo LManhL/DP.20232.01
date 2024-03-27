@@ -7,7 +7,7 @@ import entity.media.Media;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Date;
-
+// LSP: CDDAO thay đổi hành vi phương thức getMediaById của lớp cha MediaDAO
 /**
  * @author
  */

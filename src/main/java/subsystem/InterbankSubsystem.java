@@ -3,7 +3,7 @@ package subsystem;
 import entity.payment.CreditCard;
 import entity.payment.PaymentTransaction;
 import subsystem.interbank.InterbankSubsystemController;
-
+//DIP: InterbankSubsystem phụ thuộc vào lớp CreditCard một lớp cài đặt chi tiết
 /***
  * The {@code InterbankSubsystem} class is used to communicate with the
  * Interbank to make transaction.

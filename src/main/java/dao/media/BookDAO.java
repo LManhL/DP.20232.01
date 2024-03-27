@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Date;
-
+// LSP: BookDAO thay đổi hành vi phương thức getMediaById của lớp cha MediaDAO
 /**
  * @author
  */

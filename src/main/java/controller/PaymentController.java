@@ -13,7 +13,8 @@ import entity.payment.PaymentTransaction;
 import subsystem.InterbankInterface;
 import subsystem.InterbankSubsystem;
 
-
+//ISP: do PaymentController được kế thừa từ lớp BaseController nhưng không sử dụng đến phương thức checkMediaInCart(),getListCartMedia()  
+//DIP: do PaymentController phụ thuộc vào lớp CreditCard một lớp cài đặt chi tiết 
 /**
  * This {@code PaymentController} class control the flow of the payment process
  * in our AIMS Software.
