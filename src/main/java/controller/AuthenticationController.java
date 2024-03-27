@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-
+// ISP : do AuthenticationController được kế thừa từ lớp BaseController nhưng không sử dụng đến phương thức checkMediaInCart(),getListCartMedia()  
 
 /**
  * @author
