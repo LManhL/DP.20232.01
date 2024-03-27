@@ -21,6 +21,14 @@ import subsystem.InterbankSubsystem;
  * @author hieud
  *
  */
+
+/**
+ * LSP: class kế thừa từ BaseController nhưng không tuân theo hành vi được mong đợi từ lớp cha.
+ */
+
+/**
+ * DIP: class này phụ thuộc trực tiếp vào class CreditCard
+ */
 public class PaymentController extends BaseController {
 
 	/**

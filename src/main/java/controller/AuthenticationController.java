@@ -18,6 +18,15 @@ import java.util.Objects;
 /**
  * @author
  */
+
+/**
+ * LSP: class kế thừa từ BaseController nhưng không tuân theo hành vi được mong đợi từ lớp cha.
+ * BaseController liên quan tới xử lý giỏ hàng trong khi class này tập trung vào xác thực người dùng và quản lý phiên.
+ */
+
+/**
+ * DIP: class này phụ thuộc trực tiếp vào class UserDAO qua việc gọi trực tiếp phương thức authenticate của lớp UserDAO
+ */
 public class AuthenticationController extends BaseController {
 
     public boolean isAnonymousSession() {

@@ -11,6 +11,11 @@ import subsystem.interbank.InterbankSubsystemController;
  * @author hieud
  *
  */
+
+/**
+ * DIP: class này phụ thuộc trực tiếp vào class InterbankSubsystemController thay vì phụ thuộc vào trừu tượng
+ * qua việc gọi trực tiếp phương thức payOrder và refund của InterbankSubsystemController
+ */
 public class InterbankSubsystem implements InterbankInterface {
 
 	/**
