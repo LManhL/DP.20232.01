@@ -1,5 +1,9 @@
 package entity.payment;
 
+/**
+ * Vi phạm DIP: Vì lớp PaymentTransaction phụ thuộc vào lớp cụ thể là
+ * CreditCard chứ không phải lớp trừu tượng nên dễ bị sửa đổi
+ */
 public class PaymentTransaction {
 	private String errorCode;
 	private CreditCard card;
