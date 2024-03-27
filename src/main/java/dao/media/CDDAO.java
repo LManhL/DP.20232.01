@@ -11,6 +11,12 @@ import java.util.Date;
 /**
  * @author
  */
+
+/**
+ * Vi phạm LSP: Vì lớp con kế thừa từ class MediaDAO
+ * không thể sử dụng lại các hàm trong class cha
+ */
+
 public class CDDAO extends MediaDAO {
 
     @Override

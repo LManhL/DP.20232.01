@@ -14,6 +14,11 @@ import java.util.Map;
  * @author
  */
 
+/**
+ * Vi phạm DIP: Vì lớp InterbankPayloadConverter phụ thuộc vào lớp cụ thể là
+ * CreditCard chứ không phải lớp trừu tượng nên dễ bị sửa đổi
+ */
+
 public class InterbankPayloadConverter {
 
     /**
@@ -23,7 +28,6 @@ public class InterbankPayloadConverter {
      * @param contents
      * @return
      */
-    
     String convertToRequestPayload(CreditCard card, int amount, String contents) {
         Map<String, Object> transaction = new MyMap();
 

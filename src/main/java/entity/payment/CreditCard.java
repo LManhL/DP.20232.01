@@ -3,6 +3,12 @@ package entity.payment;
 /**
  * @author
  */
+
+/**
+ * Vi phạm DIP: Vì lớp CreditCard phụ thuộc vào lớp cụ thể là
+ * CreditCard chứ không phải lớp trừu tượng nên dễ bị sửa đổi
+ */
+
 public class CreditCard {
 
     private String cardCode;
