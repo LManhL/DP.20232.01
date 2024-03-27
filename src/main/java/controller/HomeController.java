@@ -4,7 +4,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 import dao.media.MediaDAO;
-
+//ISP : do HomeController được kế thừa từ lớp BaseController nhưng không sử dụng đến phương thức checkMediaInCart (),getListCartMedia()
 /**
  * This class controls the flow of events in homescreen
  * @author nguyenlm
