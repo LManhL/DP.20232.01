@@ -2,7 +2,7 @@ package subsystem.interbank;
 
 import entity.payment.CreditCard;
 import entity.payment.PaymentTransaction;
-
+//DIP: InterbankSubsystemController phụ thuộc vào lớp CreditCard một lớp cài đặt chi tiết
 public class InterbankSubsystemController {
 
 	private static InterbankPayloadConverter interbankPayloadConverter = new InterbankPayloadConverter();
