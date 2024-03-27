@@ -9,7 +9,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
-
+//DIP: InterbankPayloadConverter phụ thuộc vào lớp CreditCard một lớp cài đặt chi tiết
 /**
  * @author
  */
