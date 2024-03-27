@@ -13,6 +13,8 @@ import entity.payment.PaymentTransaction;
 import subsystem.InterbankInterface;
 import subsystem.InterbankSubsystem;
 
+// vi phạm DIP: do PaymentController phụ thuộc trực tiếp vào class CreditCard, khó mở rộng hay thay đổi phương thức thanh toán
+// vi phạm LSP: kế thừa class BaseController nhưng chức năng không có liên hệ gì và cũng không thay thế được class BaseController
 
 /**
  * This {@code PaymentController} class control the flow of the payment process

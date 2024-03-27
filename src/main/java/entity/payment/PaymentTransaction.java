@@ -2,6 +2,7 @@ package entity.payment;
 
 public class PaymentTransaction {
 	private String errorCode;
+	// vi phạm DIP: phụ thuộc vào lớp CreditCard
 	private CreditCard card;
 	private String transactionId;
 	private String transactionContent;

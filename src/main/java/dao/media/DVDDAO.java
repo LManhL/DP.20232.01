@@ -13,6 +13,8 @@ import java.util.Date;
  */
 public class DVDDAO extends MediaDAO {
 
+    // vi phạm LSP: ở lớp cha (class Media) nếu không tìm thấy sẽ trả về null
+    // nhưng khi ghi đè ở class con thì lại thay đổi hành vi của lớp cha (throw error)
     @Override
     public Media getMediaById(int id) throws SQLException {
         String sql = "SELECT * FROM "+
