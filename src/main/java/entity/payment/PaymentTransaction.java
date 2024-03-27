@@ -1,5 +1,8 @@
 package entity.payment;
 
+/**
+ * DIP: class này phụ thuộc trực tiếp vào class CreditCard
+ */
 public class PaymentTransaction {
 	private String errorCode;
 	private CreditCard card;

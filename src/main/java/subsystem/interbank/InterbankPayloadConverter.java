@@ -14,6 +14,9 @@ import java.util.Map;
  * @author
  */
 
+/**
+ * DIP: class này phụ thuộc trực tiếp vào class CreditCard
+ */
 public class InterbankPayloadConverter {
 
     /**
