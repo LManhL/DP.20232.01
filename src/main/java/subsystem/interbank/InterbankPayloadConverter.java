@@ -1,19 +1,30 @@
 package subsystem.interbank;
 
-import common.exception.*;
-import entity.payment.CreditCard;
-import entity.payment.PaymentTransaction;
-import utils.MyMap;
-
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
 
+import common.exception.InternalServerErrorException;
+import common.exception.InvalidCardException;
+import common.exception.InvalidTransactionAmountException;
+import common.exception.InvalidVersionException;
+import common.exception.NotEnoughBalanceException;
+import common.exception.NotEnoughTransactionInfoException;
+import common.exception.SuspiciousTransactionException;
+import common.exception.UnrecognizedException;
+import entity.payment.CreditCard;
+import entity.payment.PaymentTransaction;
+import utils.MyMap;
+
 /**
  * @author
  */
 
+/**
+ * Vi phạm DIP: Lớp InterbankPayloadConverter phụ thuộc vào lớp cụ thể là
+ * CreditCard chứ không phải lớp trừu tượng nên dễ bị sửa đổi
+ */
 public class InterbankPayloadConverter {
 
     /**

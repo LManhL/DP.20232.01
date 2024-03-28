@@ -7,7 +7,6 @@ import java.util.Map;
 import common.exception.InvalidCardException;
 import common.exception.PaymentException;
 import common.exception.UnrecognizedException;
-import entity.cart.Cart;
 import entity.payment.CreditCard;
 import entity.payment.PaymentTransaction;
 import subsystem.InterbankInterface;
@@ -20,6 +19,17 @@ import subsystem.InterbankSubsystem;
  * 
  * @author hieud
  *
+ */
+ 
+/**
+ * Vi phạm LSP: Vì lớp PaymentController không được sử dụng
+ * các hàm kế thừa từ BaseController vì các hàm đó không liên quan gì
+ * đến chức năng class này
+ */
+
+/**
+ * Vi phạm DIP: Vì lớp PaymentController phụ thuộc vào lớp cụ thể là
+ * CreditCard chứ không phải lớp trừu tượng nên dễ bị sửa đổi
  */
 public class PaymentController extends BaseController {
 

@@ -1,11 +1,5 @@
 package controller;
 
-import common.exception.ExpiredSessionException;
-import common.exception.FailLoginException;
-import dao.user.UserDAO;
-import entity.user.User;
-import utils.Utils;
-
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -13,10 +7,22 @@ import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
+import common.exception.ExpiredSessionException;
+import common.exception.FailLoginException;
+import dao.user.UserDAO;
+import entity.user.User;
+import utils.Utils;
+
 
 
 /**
  * @author
+ */
+
+/**
+ * Vi phạm LSP: Vì lớp AuthenticationController không được sử dụng
+ * các hàm kế thừa từ BaseController vì các hàm đó không liên quan gì
+ * đến chức năng class này
  */
 public class AuthenticationController extends BaseController {
 
